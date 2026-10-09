@@ -1,0 +1,44 @@
+{
+  "project": "CAMPUSLINK AI/ML",
+  "metadata_version": "1.0.0",
+  "models": [
+    {
+      "name": "Student-Job Matcher",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "implementation": "RULE_BASED",
+      "accuracy": null,
+      "last_updated": "2026-10-05",
+      "training_status": "NOT_APPLICABLE_CURRENT_IMPLEMENTATION"
+    },
+    {
+      "name": "Skill Gap Analyzer",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "implementation": "RULE_BASED",
+      "accuracy": null,
+      "last_updated": "2026-10-05",
+      "training_status": "NOT_APPLICABLE_CURRENT_IMPLEMENTATION"
+    },
+    {
+      "name": "Interview Evaluator",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "implementation": "RULE_BASED",
+      "accuracy": null,
+      "last_updated": "2026-10-05",
+      "training_status": "NOT_APPLICABLE_CURRENT_IMPLEMENTATION"
+    },
+    {
+      "name": "Interview Monitoring",
+      "version": "1.0.0",
+      "status": "ACTIVE",
+      "implementation": "COMPUTER_VISION_RULE_ENGINE",
+      "accuracy": null,
+      "last_updated": "2026-10-05",
+      "training_status": "NOT_APPLICABLE_CURRENT_IMPLEMENTATION"
+    }
+  ],
+  "last_training_check": "2026-10-05T12:58:56.073014",
+  "training_status": "NOT_APPLICABLE_CURRENT_RULE_BASED_IMPLEMENTATION"
+}

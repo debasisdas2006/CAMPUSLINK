@@ -1,0 +1,1341 @@
+/* ========================================
+   CAMPUSLINK INTRO ANIMATION
+   KEY → UNLOCK → CAMPUS → CAREER
+======================================== */
+
+.campus-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+
+  background: #061426;
+
+  animation:
+    introFadeOut 0.45s ease 1.85s forwards;
+}
+
+.intro-background {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(37, 99, 235, 0.18),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #071a30 0%,
+      #081426 50%,
+      #03101e 100%
+    );
+}
+
+/* ========================================
+   CAMPUS GLOW
+======================================== */
+
+.campus-glow {
+  position: absolute;
+
+  left: 50%;
+  top: 38%;
+
+  width: 500px;
+  height: 500px;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(37, 99, 235, 0.18),
+      transparent 68%
+    );
+
+  filter: blur(15px);
+
+  animation: glowPulse 1.8s ease-in-out infinite;
+}
+
+/* ========================================
+   CAMPUS BUILDING
+======================================== */
+
+.campus-building {
+  position: absolute;
+
+  left: 50%;
+  top: 19%;
+
+  width: 520px;
+  height: 420px;
+
+  transform: translateX(-50%);
+
+  opacity: 0;
+
+  animation:
+    buildingAppear 0.45s ease 0.05s forwards;
+}
+
+.building-top {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid rgba(
+    96,
+    165,
+    250,
+    0.25
+  );
+
+  border-bottom: 0;
+
+  border-radius: 12px 12px 0 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #102b4a,
+      #0b2038
+    );
+
+  box-shadow:
+    0 15px 45px rgba(
+      0,
+      0,
+      0,
+      0.35
+    );
+}
+
+.building-top span {
+  color: #dceeff;
+
+  font-size: 26px;
+  font-weight: 900;
+
+  letter-spacing: 4px;
+
+  text-shadow:
+    0 0 20px rgba(
+      96,
+      165,
+      250,
+      0.35
+    );
+}
+
+.building-body {
+  position: absolute;
+
+  left: 0;
+  top: 75px;
+
+  width: 100%;
+  height: 345px;
+
+  border: 2px solid rgba(
+    96,
+    165,
+    250,
+    0.18
+  );
+
+  background:
+    linear-gradient(
+      145deg,
+      #102945,
+      #081a2e
+    );
+
+  box-shadow:
+    0 30px 70px rgba(
+      0,
+      0,
+      0,
+      0.45
+    );
+}
+
+/* ========================================
+   BUILDING COLUMNS
+======================================== */
+
+.building-column {
+  position: absolute;
+
+  top: 0;
+
+  width: 50px;
+  height: 100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0a1e35,
+      #163756,
+      #0a1e35
+    );
+
+  border-left: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.10
+  );
+
+  border-right: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.10
+  );
+}
+
+.column-left {
+  left: 25px;
+}
+
+.column-right {
+  right: 25px;
+}
+
+/* ========================================
+   BUILDING WINDOWS
+======================================== */
+
+.building-window {
+  position: absolute;
+
+  top: 65px;
+
+  width: 65px;
+  height: 82px;
+
+  border: 3px solid #294a68;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(96, 165, 250, 0.35),
+      rgba(14, 165, 233, 0.10)
+    );
+
+  box-shadow:
+    inset 0 0 20px rgba(
+      96,
+      165,
+      250,
+      0.10
+    );
+}
+
+.window-one {
+  left: 90px;
+}
+
+.window-two {
+  left: 225px;
+}
+
+.window-three {
+  right: 90px;
+}
+
+.building-window::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  width: 2px;
+  height: 100%;
+
+  transform: translateX(-50%);
+
+  background: rgba(
+    96,
+    165,
+    250,
+    0.25
+  );
+}
+
+.building-window::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 100%;
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  background: rgba(
+    96,
+    165,
+    250,
+    0.25
+  );
+}
+
+/* ========================================
+   DOOR FRAME
+======================================== */
+
+.campus-door-frame {
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 170px;
+  height: 260px;
+
+  transform: translateX(-50%);
+
+  z-index: 5;
+
+  border: 8px solid #203d59;
+
+  border-bottom: 0;
+
+  border-radius: 14px 14px 0 0;
+
+  background: #061525;
+
+  box-shadow:
+    0 0 0 2px rgba(
+      96,
+      165,
+      250,
+      0.08
+    ),
+    0 20px 45px rgba(
+      0,
+      0,
+      0,
+      0.4
+    );
+}
+
+/* ========================================
+   DOOR LIGHT
+======================================== */
+
+.door-light {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 120px;
+  height: 210px;
+
+  transform:
+    translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      ellipse,
+      rgba(56, 189, 248, 0.22),
+      transparent 70%
+    );
+
+  opacity: 0;
+
+  animation:
+    doorLight 0.6s ease 1.05s forwards;
+}
+
+/* ========================================
+   DOOR
+======================================== */
+
+.campus-door {
+  position: absolute;
+
+  inset: 0;
+
+  transform-origin: left center;
+
+  border-radius: 5px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #173654,
+      #0a2037
+    );
+
+  border: 2px solid #31526e;
+
+  box-shadow:
+    inset 0 0 30px rgba(
+      0,
+      0,
+      0,
+      0.25
+    );
+
+  animation:
+    doorOpen 0.55s
+    cubic-bezier(
+      0.68,
+      -0.15,
+      0.25,
+      1.15
+    )
+    1.15s
+    forwards;
+}
+
+.door-panel {
+  position: absolute;
+
+  left: 22px;
+  right: 22px;
+
+  border: 2px solid rgba(
+    96,
+    165,
+    250,
+    0.16
+  );
+
+  border-radius: 5px;
+
+  background:
+    rgba(
+      5,
+      20,
+      35,
+      0.35
+    );
+}
+
+.door-panel-top {
+  top: 25px;
+  height: 75px;
+}
+
+.door-panel-bottom {
+  bottom: 25px;
+  height: 105px;
+}
+
+/* ========================================
+   DOOR HANDLE
+======================================== */
+
+.door-handle {
+  position: absolute;
+
+  right: 18px;
+  top: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+
+  background: #d7e4ef;
+
+  box-shadow:
+    0 0 8px rgba(
+      255,
+      255,
+      255,
+      0.25
+    );
+}
+
+/* ========================================
+   LOCK
+======================================== */
+
+.door-lock {
+  position: absolute;
+
+  right: 13px;
+  top: 50%;
+
+  width: 25px;
+  height: 35px;
+
+  transform:
+    translateY(-50%);
+
+  z-index: 4;
+
+  opacity: 1;
+
+  animation:
+    lockDisappear 0.25s
+    ease
+    1.12s
+    forwards;
+}
+
+.lock-body {
+  position: absolute;
+
+  left: 2px;
+  bottom: 0;
+
+  width: 21px;
+  height: 20px;
+
+  border-radius: 4px;
+
+  background: #e5b84b;
+
+  box-shadow:
+    0 0 10px rgba(
+      234,
+      179,
+      8,
+      0.35
+    );
+}
+
+.lock-shackle {
+  position: absolute;
+
+  left: 6px;
+  top: 0;
+
+  width: 13px;
+  height: 17px;
+
+  border: 3px solid #e5b84b;
+
+  border-bottom: 0;
+
+  border-radius: 8px 8px 0 0;
+}
+
+/* ========================================
+   STUDENT
+======================================== */
+
+.student {
+  position: absolute;
+
+  left: -120px;
+  bottom: 48px;
+
+  width: 92px;
+  height: 190px;
+
+  z-index: 20;
+
+  animation:
+    studentWalk 1.15s
+    cubic-bezier(
+      0.65,
+      0,
+      0.35,
+      1
+    )
+    0.10s
+    forwards;
+}
+
+/* ========================================
+   STUDENT HEAD
+======================================== */
+
+.student-head {
+  position: absolute;
+
+  left: 28px;
+  top: 0;
+
+  width: 48px;
+  height: 52px;
+
+  border-radius:
+    48% 48% 45% 45%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f4c7a1,
+      #d99770
+    );
+
+  z-index: 4;
+
+  box-shadow:
+    inset -5px -4px 0 rgba(
+      150,
+      80,
+      55,
+      0.10
+    );
+}
+
+.student-face {
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+}
+
+/* ========================================
+   HAIR
+======================================== */
+
+.student-hair {
+  position: absolute;
+
+  left: -2px;
+  top: -4px;
+
+  width: 52px;
+  height: 27px;
+
+  border-radius:
+    55% 55% 35% 35%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #111827,
+      #334155
+    );
+
+  transform: rotate(-2deg);
+}
+
+/* ========================================
+   EYES
+======================================== */
+
+.student-eye {
+  position: absolute;
+
+  top: 25px;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #111827;
+}
+
+.eye-left {
+  left: 14px;
+}
+
+.eye-right {
+  right: 14px;
+}
+
+/* ========================================
+   BODY
+======================================== */
+
+.student-body {
+  position: absolute;
+
+  left: 20px;
+  top: 48px;
+
+  width: 62px;
+  height: 78px;
+
+  z-index: 3;
+}
+
+.student-shirt {
+  position: absolute;
+
+  left: 7px;
+  top: 0;
+
+  width: 48px;
+  height: 75px;
+
+  border-radius:
+    14px 14px 8px 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #0891b2
+    );
+
+  box-shadow:
+    inset -7px 0 0 rgba(
+      0,
+      0,
+      0,
+      0.10
+    );
+}
+
+.student-shirt span {
+  position: absolute;
+
+  left: 50%;
+  top: 20px;
+
+  transform: translateX(-50%);
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* ========================================
+   ARMS
+======================================== */
+
+.student-arm {
+  position: absolute;
+
+  width: 15px;
+  height: 62px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #2563eb,
+      #1d4ed8
+    );
+
+  transform-origin: top center;
+}
+
+.student-arm-back {
+  left: -3px;
+  top: 5px;
+
+  transform:
+    rotate(28deg);
+
+  animation:
+    armBack 0.45s
+    ease-in-out
+    0.1s
+    infinite
+    alternate;
+}
+
+.student-arm-front {
+  right: -2px;
+  top: 4px;
+
+  transform:
+    rotate(-38deg);
+
+  animation:
+    armFront 0.45s
+    ease-in-out
+    0.1s
+    infinite
+    alternate;
+}
+
+/* ========================================
+   LEGS
+======================================== */
+
+.student-leg {
+  position: absolute;
+
+  top: 119px;
+
+  width: 18px;
+  height: 70px;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #26384d,
+      #111c2b
+    );
+
+  transform-origin: top center;
+
+  z-index: 2;
+}
+
+.leg-left {
+  left: 27px;
+
+  animation:
+    legLeft 0.38s
+    ease-in-out
+    0.1s
+    infinite
+    alternate;
+}
+
+.leg-right {
+  right: 27px;
+
+  animation:
+    legRight 0.38s
+    ease-in-out
+    0.1s
+    infinite
+    alternate;
+}
+
+/* ========================================
+   KEY
+======================================== */
+
+.student-key {
+  position: absolute;
+
+  right: -4px;
+  top: 67px;
+
+  width: 62px;
+  height: 28px;
+
+  z-index: 10;
+
+  transform:
+    rotate(-8deg);
+
+  animation:
+    keyMove 0.7s
+    ease-in-out
+    0.65s
+    forwards;
+}
+
+.key-ring {
+  position: absolute;
+
+  left: 0;
+  top: 2px;
+
+  width: 24px;
+  height: 24px;
+
+  border: 4px solid #f4c95d;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 12px rgba(
+      250,
+      204,
+      21,
+      0.35
+    );
+}
+
+.key-stick {
+  position: absolute;
+
+  left: 20px;
+  top: 11px;
+
+  width: 36px;
+  height: 5px;
+
+  border-radius: 4px;
+
+  background: #f4c95d;
+}
+
+.key-teeth {
+  position: absolute;
+
+  right: 0;
+  top: 10px;
+
+  width: 9px;
+  height: 12px;
+
+  border-right: 5px solid #f4c95d;
+
+  border-bottom: 5px solid #f4c95d;
+}
+
+/* ========================================
+   GROUND
+======================================== */
+
+.campus-ground {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 50px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #0c2238,
+      #061423
+    );
+
+  border-top:
+    1px solid rgba(
+      96,
+      165,
+      250,
+      0.12
+    );
+
+  box-shadow:
+    0 -10px 30px rgba(
+      0,
+      0,
+      0,
+      0.18
+    );
+}
+
+/* ========================================
+   TEXT
+======================================== */
+
+.intro-text {
+  position: absolute;
+
+  left: 50%;
+  bottom: 70px;
+
+  transform:
+    translateX(-50%);
+
+  z-index: 30;
+
+  text-align: center;
+
+  opacity: 0;
+
+  animation:
+    introTextAppear
+    0.55s
+    ease
+    1.20s
+    forwards;
+}
+
+.intro-title {
+  color: #f1f7ff;
+
+  font-size: 38px;
+  font-weight: 900;
+
+  letter-spacing: 7px;
+
+  text-shadow:
+    0 0 25px rgba(
+      96,
+      165,
+      250,
+      0.35
+    );
+}
+
+.intro-subtitle {
+  margin-top: 7px;
+
+  color: #82a6ca;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   LOADING DOTS
+======================================== */
+
+.intro-loading {
+  position: absolute;
+
+  left: 50%;
+  bottom: 30px;
+
+  display: flex;
+
+  gap: 5px;
+
+  transform:
+    translateX(-50%);
+
+  z-index: 30;
+
+  opacity: 0;
+
+  animation:
+    loadingAppear
+    0.3s
+    ease
+    1.45s
+    forwards;
+}
+
+.intro-loading span {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #60a5fa;
+
+  animation:
+    loadingPulse
+    0.7s
+    ease-in-out
+    infinite
+    alternate;
+}
+
+.intro-loading span:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.intro-loading span:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+@keyframes buildingAppear {
+  from {
+    opacity: 0;
+    transform:
+      translateX(-50%)
+      translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateX(-50%)
+      translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform:
+      translate(-50%, -50%)
+      scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform:
+      translate(-50%, -50%)
+      scale(1.05);
+  }
+}
+
+@keyframes studentWalk {
+  0% {
+    left: -120px;
+  }
+
+  75% {
+    left: calc(50% - 180px);
+  }
+
+  100% {
+    left: calc(50% - 130px);
+  }
+}
+
+@keyframes armBack {
+  from {
+    transform: rotate(25deg);
+  }
+
+  to {
+    transform: rotate(-15deg);
+  }
+}
+
+@keyframes armFront {
+  from {
+    transform: rotate(-38deg);
+  }
+
+  to {
+    transform: rotate(12deg);
+  }
+}
+
+@keyframes legLeft {
+  from {
+    transform: rotate(25deg);
+  }
+
+  to {
+    transform: rotate(-25deg);
+  }
+}
+
+@keyframes legRight {
+  from {
+    transform: rotate(-25deg);
+  }
+
+  to {
+    transform: rotate(25deg);
+  }
+}
+
+@keyframes keyMove {
+  0% {
+    opacity: 0;
+    transform:
+      translateX(35px)
+      rotate(-8deg);
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform:
+      translateX(-8px)
+      rotate(-8deg);
+  }
+}
+
+@keyframes lockDisappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes doorLight {
+  0% {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform:
+      translate(-50%, -50%)
+      scale(1);
+  }
+}
+
+@keyframes doorOpen {
+  0% {
+    transform:
+      perspective(700px)
+      rotateY(0deg);
+  }
+
+  100% {
+    transform:
+      perspective(700px)
+      rotateY(-82deg);
+  }
+}
+
+@keyframes introTextAppear {
+  from {
+    opacity: 0;
+    transform:
+      translateX(-50%)
+      translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateX(-50%)
+      translateY(0);
+  }
+}
+
+@keyframes loadingAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loadingPulse {
+  from {
+    opacity: 0.3;
+    transform: scale(0.75);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes introFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+  .campus-building {
+    width: 390px;
+    height: 330px;
+    top: 25%;
+  }
+
+  .building-top {
+    height: 60px;
+  }
+
+  .building-top span {
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+
+  .building-body {
+    top: 60px;
+    height: 270px;
+  }
+
+  .building-window {
+    top: 45px;
+    width: 48px;
+    height: 65px;
+  }
+
+  .window-one {
+    left: 60px;
+  }
+
+  .window-two {
+    left: 170px;
+  }
+
+  .window-three {
+    right: 60px;
+  }
+
+  .campus-door-frame {
+    width: 130px;
+    height: 205px;
+  }
+
+  .student {
+    transform: scale(0.8);
+    transform-origin: bottom center;
+  }
+
+  .intro-title {
+    font-size: 29px;
+    letter-spacing: 4px;
+  }
+
+  .intro-subtitle {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 450px) {
+  .campus-building {
+    width: 310px;
+  }
+
+  .building-window {
+    width: 40px;
+  }
+
+  .window-one {
+    left: 45px;
+  }
+
+  .window-two {
+    left: 135px;
+  }
+
+  .window-three {
+    right: 45px;
+  }
+
+  .intro-title {
+    font-size: 23px;
+  }
+
+  .intro-subtitle {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "application": {
+    "name": "CAMPUSLINK AI/ML",
+    "version": "1.0.0",
+    "environment": "development"
+  },
+  "matching": {
+    "minimum_match_score": 60,
+    "high_match_score": 90,
+    "medium_match_score": 75
+  },
+  "eligibility": {
+    "minimum_eligibility_score": 70,
+    "cgpa_weight": 0.25,
+    "education_weight": 0.15,
+    "experience_weight": 0.10,
+    "technical_skill_weight": 0.50
+  },
+  "final_evaluation": {
+    "eligibility_weight": 40,
+    "job_match_weight": 30,
+    "interview_weight": 30,
+    "interview_cutoff": 60,
+    "final_cutoff": 70
+  },
+  "interview": {
+    "default_question_count": 5,
+    "default_difficulty": "medium",
+    "strong_performance_threshold": 80,
+    "weak_performance_threshold": 50
+  },
+  "monitoring": {
+    "enabled": true,
+    "sensitivity": "medium",
+    "events": [
+      "FACE_DETECTED",
+      "FACE_NOT_DETECTED",
+      "MULTIPLE_FACES",
+      "LOOKING_AWAY",
+      "EXCESSIVE_MOVEMENT",
+      "CAMERA_DISCONNECTED",
+      "MICROPHONE_DISCONNECTED"
+    ]
+  },
+  "candidate_recommendation": {
+    "strong_candidate_minimum": 85,
+    "good_candidate_minimum": 70,
+    "moderate_candidate_minimum": 55
+  }
+}

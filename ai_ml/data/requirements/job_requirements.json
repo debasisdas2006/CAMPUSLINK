@@ -1,0 +1,72 @@
+[
+  {
+    "requirement_id": "REQ001",
+    "job_id": "JOB001",
+    "minimum_cgpa": 7.0,
+    "degree_required": [
+      "B.Tech",
+      "B.E."
+    ],
+    "minimum_experience_years": 0,
+    "required_languages": [
+      "Python",
+      "SQL"
+    ],
+    "required_skills": [
+      "Python",
+      "SQL",
+      "OOP",
+      "Data Structures",
+      "REST API"
+    ],
+    "eligibility_cutoff": 70,
+    "interview_cutoff": 60
+  },
+  {
+    "requirement_id": "REQ002",
+    "job_id": "JOB002",
+    "minimum_cgpa": 7.5,
+    "degree_required": [
+      "B.Tech",
+      "B.E."
+    ],
+    "minimum_experience_years": 1,
+    "required_languages": [
+      "Java",
+      "SQL"
+    ],
+    "required_skills": [
+      "Java",
+      "SQL",
+      "Spring Boot",
+      "OOP",
+      "Data Structures"
+    ],
+    "eligibility_cutoff": 70,
+    "interview_cutoff": 60
+  },
+  {
+    "requirement_id": "REQ003",
+    "job_id": "JOB003",
+    "minimum_cgpa": 7.5,
+    "degree_required": [
+      "B.Tech",
+      "B.E.",
+      "M.Tech"
+    ],
+    "minimum_experience_years": 0,
+    "required_languages": [
+      "Python",
+      "SQL"
+    ],
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Data Structures",
+      "Algorithms"
+    ],
+    "eligibility_cutoff": 70,
+    "interview_cutoff": 65
+  }
+]

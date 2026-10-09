@@ -1,0 +1,15 @@
+.interview-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 1px;
+}
+
+.timer-colon {
+  margin: 0 3px;
+  color: #60a5fa;
+}

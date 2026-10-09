@@ -1,0 +1,145 @@
+[
+  {
+    "question_id": "INT001",
+    "expected_concepts": ["variables", "data types", "dynamic typing"],
+    "evaluation_points": 3
+  },
+  {
+    "question_id": "INT002",
+    "expected_concepts": ["list", "tuple", "mutable", "immutable"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT003",
+    "expected_concepts": ["exception", "try", "except", "finally"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT004",
+    "expected_concepts": ["select", "from", "where", "filter"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT005",
+    "expected_concepts": ["primary key", "unique", "identify", "row"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT006",
+    "expected_concepts": ["join", "tables", "matching", "rows"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT007",
+    "expected_concepts": ["class", "object", "blueprint", "instance"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT008",
+    "expected_concepts": ["inheritance", "parent", "child", "reuse"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT009",
+    "expected_concepts": ["encapsulation", "data hiding", "access", "methods"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT010",
+    "expected_concepts": ["array", "index", "contiguous", "memory"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT011",
+    "expected_concepts": ["stack", "lifo", "push", "pop"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT012",
+    "expected_concepts": ["queue", "fifo", "enqueue", "dequeue"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT013",
+    "expected_concepts": ["algorithm", "time complexity", "space complexity"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT014",
+    "expected_concepts": ["binary search", "sorted", "divide", "logarithmic"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT015",
+    "expected_concepts": ["sorting", "comparison", "time complexity"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT016",
+    "expected_concepts": ["rest", "api", "http", "client", "server"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT017",
+    "expected_concepts": ["get", "post", "put", "delete", "http methods"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT018",
+    "expected_concepts": ["status code", "200", "400", "404", "500"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT019",
+    "expected_concepts": ["machine learning", "data", "patterns", "prediction"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT020",
+    "expected_concepts": ["supervised learning", "labeled data", "classification", "regression"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT021",
+    "expected_concepts": ["overfitting", "training", "testing", "generalization"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT022",
+    "expected_concepts": ["class", "object", "jvm", "java"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT023",
+    "expected_concepts": ["interface", "abstraction", "implementation"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT024",
+    "expected_concepts": ["exception", "try", "catch", "finally"],
+    "evaluation_points": 4
+  },
+
+  {
+    "question_id": "INT025",
+    "expected_concepts": ["spring boot", "application", "framework", "configuration"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT026",
+    "expected_concepts": ["dependency injection", "ioc", "dependency"],
+    "evaluation_points": 4
+  },
+  {
+    "question_id": "INT027",
+    "expected_concepts": ["rest controller", "controller", "endpoint", "request"],
+    "evaluation_points": 4
+  }
+]

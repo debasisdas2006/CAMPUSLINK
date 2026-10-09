@@ -1,0 +1,48 @@
+.monitoring-status {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.monitoring-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(148, 163, 184, 0.05);
+}
+
+.monitoring-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(37, 99, 235, 0.1);
+  color: #60a5fa;
+}
+
+.monitoring-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.monitoring-info strong {
+  color: #dce6f2;
+  font-size: 11px;
+}
+
+.monitoring-info span {
+  font-size: 10px;
+}
+
+.monitoring-online {
+  color: #4ade80;
+}
+
+.monitoring-offline {
+  color: #64748b;
+}

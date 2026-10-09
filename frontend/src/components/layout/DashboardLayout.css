@@ -1,0 +1,100 @@
+/* ========================================
+   CAMPUSLINK DASHBOARD LAYOUT
+======================================== */
+
+.dashboard-layout {
+  display: flex;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  background: #07111f;
+}
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.dashboard-main {
+  flex: 1;
+
+  min-width: 0;
+
+  min-height: 100vh;
+
+  margin-left: 280px;
+
+  padding: 30px 34px;
+
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(37, 99, 235, 0.10),
+      transparent 35%
+    ),
+    #07111f;
+
+  color: #e5eefb;
+}
+
+/* ========================================
+   GLOBAL DASHBOARD HEADINGS
+======================================== */
+
+.dashboard-main h1,
+.dashboard-main h2,
+.dashboard-main h3,
+.dashboard-main h4,
+.dashboard-main h5,
+.dashboard-main h6 {
+  color: #f4f8ff;
+}
+
+/* ========================================
+   GLOBAL DASHBOARD PARAGRAPHS
+======================================== */
+
+.dashboard-main p {
+  color: #a9bad0;
+}
+
+/* ========================================
+   DASHBOARD TEXT
+======================================== */
+
+.dashboard-main span {
+  color: inherit;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+.dashboard-main a {
+  color: #60a5fa;
+
+  text-decoration: none;
+}
+
+.dashboard-main a:hover {
+  color: #93c5fd;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 900px) {
+  .dashboard-layout {
+    display: block;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+
+    min-height: auto;
+
+    padding: 24px 20px;
+  }
+}

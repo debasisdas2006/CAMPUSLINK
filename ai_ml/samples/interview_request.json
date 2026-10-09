@@ -1,0 +1,13 @@
+{
+  "student_id": "STU001",
+  "job_id": "JOB001",
+  "recruiter_id": "REC001",
+  "total_questions": 5,
+  "self_assessment_scores": {
+    "Python": 85,
+    "SQL": 55,
+    "OOP": 45,
+    "Data Structures": 70
+  },
+  "seed": 42
+}

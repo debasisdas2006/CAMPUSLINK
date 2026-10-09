@@ -1,0 +1,245 @@
+.final-decision-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(5, 12, 28, 0.78);
+  backdrop-filter: blur(5px);
+}
+
+.final-decision-modal {
+  width: min(760px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  border: 1px solid rgba(94, 129, 190, 0.35);
+  border-radius: 18px;
+  background: #0c1730;
+  color: #ffffff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.final-decision-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  border-bottom: 1px solid rgba(94, 129, 190, 0.22);
+}
+
+.final-decision-header span {
+  display: block;
+  margin-bottom: 6px;
+  color: #87a8dd;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.final-decision-header h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.final-decision-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.final-decision-close:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.final-decision-body {
+  padding: 24px;
+}
+
+.final-decision-application-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.final-decision-application-info > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(94, 129, 190, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  color: #dce7fb;
+}
+
+.final-decision-application-info svg {
+  flex: 0 0 auto;
+  color: #7da6e5;
+}
+
+.final-decision-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.final-decision-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  border: 1px solid rgba(94, 129, 190, 0.25);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #dbe7fb;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.final-decision-option.selected.active {
+  border-color: rgba(74, 222, 128, 0.5);
+  background: rgba(74, 222, 128, 0.1);
+  color: #b8f8ce;
+}
+
+.final-decision-option.rejected.active {
+  border-color: rgba(248, 113, 113, 0.5);
+  background: rgba(248, 113, 113, 0.1);
+  color: #ffc1c1;
+}
+
+.final-decision-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.final-decision-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.final-decision-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.final-decision-field label {
+  color: #b8c8e4;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.final-decision-field input,
+.final-decision-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(94, 129, 190, 0.26);
+  border-radius: 10px;
+  outline: none;
+  background: #101e3c;
+  color: #ffffff;
+  font: inherit;
+  padding: 12px 13px;
+}
+
+.final-decision-field input:focus,
+.final-decision-field textarea:focus {
+  border-color: #6f9fe7;
+  box-shadow: 0 0 0 3px rgba(111, 159, 231, 0.12);
+}
+
+.final-decision-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.final-decision-field input::placeholder,
+.final-decision-field textarea::placeholder {
+  color: #7182a2;
+}
+
+.final-decision-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 18px 24px 22px;
+  border-top: 1px solid rgba(94, 129, 190, 0.22);
+}
+
+.final-decision-cancel,
+.final-decision-confirm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.final-decision-cancel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #d9e4f7;
+}
+
+.final-decision-confirm {
+  border: 1px solid rgba(91, 148, 233, 0.38);
+  background: #245eb7;
+  color: #ffffff;
+}
+
+.final-decision-confirm:hover {
+  background: #2d6bc8;
+}
+
+.final-decision-cancel:disabled,
+.final-decision-confirm:disabled,
+.final-decision-option:disabled,
+.final-decision-close:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .final-decision-overlay {
+    padding: 12px;
+  }
+
+  .final-decision-application-info,
+  .final-decision-options,
+  .final-decision-form {
+    grid-template-columns: 1fr;
+  }
+
+  .final-decision-field.full-width {
+    grid-column: auto;
+  }
+
+  .final-decision-footer {
+    flex-direction: column-reverse;
+  }
+
+  .final-decision-cancel,
+  .final-decision-confirm {
+    width: 100%;
+  }
+}

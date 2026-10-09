@@ -1,0 +1,11 @@
+student_id,name,branch,year,cgpa,skills,placement_status
+S001,Aarav,CSE,4,8.7,"Python,SQL,Machine Learning",Placed
+S002,Ananya,CSE,4,9.1,"Java,SQL,React",Placed
+S003,Rahul,IT,4,7.8,"Python,JavaScript,HTML",Not Placed
+S004,Priya,CSE,4,8.4,"Python,React,Node.js",Placed
+S005,Rohan,EEE,4,7.2,"C,Embedded Systems",Not Placed
+S006,Neha,IT,4,8.9,"Python,SQL,Power BI",Placed
+S007,Aditya,CSE,4,7.6,"Java,Spring,SQL",Not Placed
+S008,Sneha,IT,4,8.2,"Python,React,SQL",Placed
+S009,Vivek,CSE,4,6.9,"C++,Java",Not Placed
+S010,Isha,CSE,4,9.3,"Python,AI,Machine Learning",Placed

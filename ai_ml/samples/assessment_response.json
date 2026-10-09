@@ -1,0 +1,25 @@
+{
+  "test_id": "TEST-DEMO-001",
+  "student_id": "STU001",
+  "total_questions": 5,
+  "status": "IN_PROGRESS",
+  "progress": {
+    "answered": 0,
+    "unanswered": 5,
+    "percentage": 0
+  },
+  "questions": [
+    {
+      "question_id": "PY001",
+      "skill": "Python",
+      "difficulty": "MEDIUM",
+      "question": "Which keyword is used to define a function?",
+      "options": [
+        "func",
+        "def",
+        "function",
+        "define"
+      ]
+    }
+  ]
+}

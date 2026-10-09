@@ -1,0 +1,12 @@
+{
+  "student_id": "STU001",
+  "student_name": "Rahul Kumar",
+  "skills": [
+    "Python",
+    "SQL",
+    "OOP",
+    "DSA"
+  ],
+  "total_questions": 5,
+  "test_type": "SELF_ASSESSMENT"
+}

@@ -1,0 +1,8 @@
+job_id,company,role,required_skill,min_cgpa,applications
+J001,TCS,Software Developer,Java,7.0,120
+J002,Infosys,Data Analyst,SQL,7.5,95
+J003,Microsoft,Software Engineer,Python,8.0,150
+J004,Wipro,Web Developer,React,6.5,110
+J005,Accenture,Data Analyst,Power BI,7.0,85
+J006,Amazon,ML Engineer,Machine Learning,8.0,130
+J007,Deloitte,Software Developer,Python,7.0,105

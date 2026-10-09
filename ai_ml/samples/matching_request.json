@@ -1,0 +1,39 @@
+{
+  "student": {
+    "student_id": "STU001",
+    "name": "Rahul Kumar",
+    "cgpa": 8.5,
+    "degree": "B.Tech CSE",
+    "experience": "Fresher",
+    "languages": [
+      "Python",
+      "Java"
+    ],
+    "skills": [
+      "Python",
+      "SQL",
+      "OOP",
+      "DSA"
+    ]
+  },
+  "job": {
+    "job_id": "JOB001",
+    "job_title": "Python Developer",
+    "company_id": "COMP001",
+    "degree": "B.Tech CSE",
+    "min_cgpa": 7.0,
+    "experience": "Fresher"
+  },
+  "requirements": {
+    "job_id": "JOB001",
+    "required_languages": [
+      "Python"
+    ],
+    "required_skills": [
+      "Python",
+      "SQL",
+      "OOP",
+      "DSA"
+    ]
+  }
+}

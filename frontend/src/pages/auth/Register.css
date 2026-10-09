@@ -1,0 +1,966 @@
+/* =========================================================
+   CAMPUSLINK CREATE ACCOUNT
+   ========================================================= */
+
+.register-page {
+  min-height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+
+  background:
+    radial-gradient(
+      circle at 18% 25%,
+      rgba(37, 99, 235, 0.20),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 88% 78%,
+      rgba(6, 182, 212, 0.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #07162d 0%,
+      #061225 50%,
+      #06131f 100%
+    );
+
+  color: #f8fafc;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.register-brand-panel {
+  min-height: 100vh;
+
+  padding: 60px 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+.register-brand-panel::before {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  border-radius: 50%;
+
+  background: rgba(
+    37,
+    99,
+    235,
+    0.10
+  );
+
+  filter: blur(100px);
+
+  top: 40px;
+  left: -180px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   BRAND
+   ========================================================= */
+
+.register-brand {
+  position: absolute;
+
+  top: 55px;
+  left: 70px;
+
+  z-index: 2;
+}
+
+
+.register-brand-icon {
+  width: 82px;
+  height: 82px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb 0%,
+      #06b6d4 100%
+    );
+
+  box-shadow:
+    0 18px 45px rgba(
+      37,
+      99,
+      235,
+      0.30
+    ),
+    inset 0 1px 0 rgba(
+      255,
+      255,
+      255,
+      0.18
+    );
+
+  margin-bottom: 26px;
+}
+
+
+.register-brand-icon svg {
+  color: white;
+}
+
+
+.register-brand-name {
+  margin: 0;
+
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -1.2px;
+
+  color: #ffffff;
+}
+
+
+.register-brand-name span {
+  color: #60a5fa;
+}
+
+
+.register-brand-subtitle {
+  margin-top: 10px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #7ea4d0;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.register-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 760px;
+
+  margin-top: 100px;
+}
+
+
+.register-hero-label {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 20px;
+
+  color: #60a5fa;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+
+.register-hero-content h1 {
+  margin: 0 0 28px;
+
+  font-size: clamp(
+    56px,
+    5vw,
+    82px
+  );
+
+  line-height: 1.02;
+
+  font-weight: 900;
+
+  letter-spacing: -3px;
+
+  color: #f8fafc;
+}
+
+
+.register-hero-content p {
+  max-width: 740px;
+
+  margin: 0 0 28px;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+
+  color: #a9c3e2;
+}
+
+
+.register-features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+
+  color: #dcecff;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.register-form-panel {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 35px 65px 35px 25px;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.register-card {
+  width: 100%;
+
+  max-width: 620px;
+
+  max-height: calc(100vh - 70px);
+
+  overflow-y: auto;
+
+  box-sizing: border-box;
+
+  padding: 38px 52px 38px;
+
+  border-radius: 30px;
+
+  border: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.22
+  );
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(
+        17,
+        37,
+        59,
+        0.98
+      ),
+      rgba(
+        8,
+        27,
+        46,
+        0.98
+      )
+    );
+
+  box-shadow:
+    0 35px 90px rgba(
+      0,
+      0,
+      0,
+      0.42
+    ),
+    inset 0 1px 0 rgba(
+      255,
+      255,
+      255,
+      0.04
+    );
+
+  backdrop-filter: blur(20px);
+}
+
+
+/* Scrollbar */
+
+.register-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.register-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.register-card::-webkit-scrollbar-thumb {
+  background: #29425d;
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   BACK
+   ========================================================= */
+
+.register-back-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 22px;
+
+  color: #8fa8c1;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+
+.register-back-link:hover {
+  color: #60a5fa;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.register-card-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  color: #e2e8f0;
+
+  margin-bottom: 8px;
+}
+
+
+.register-card h2 {
+  margin: 0;
+
+  font-size: 40px;
+
+  line-height: 1.1;
+
+  font-weight: 900;
+
+  letter-spacing: -1px;
+
+  color: #f8fafc;
+}
+
+
+.register-card-subtitle {
+  margin: 12px 0 25px;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  color: #91a8c2;
+}
+
+
+/* =========================================================
+   ROLE BUTTONS
+   ========================================================= */
+
+.register-role-box {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  margin-bottom: 24px;
+}
+
+
+.register-role {
+  height: 55px;
+
+  border: 1px solid #29425d;
+
+  border-radius: 11px;
+
+  background: #071a2c;
+
+  color: #a9bdd2;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.register-role:hover {
+  border-color: #398ff0;
+
+  color: #e2e8f0;
+}
+
+
+.register-role.active {
+  color: #ffffff;
+
+  border-color: #2d8cf0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(
+        37,
+        99,
+        235,
+        0.25
+      ),
+      rgba(
+        8,
+        145,
+        178,
+        0.22
+      )
+    );
+
+  box-shadow:
+    0 8px 22px rgba(
+      37,
+      99,
+      235,
+      0.12
+    );
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.register-form {
+  width: 100%;
+}
+
+
+.register-field {
+  width: 100%;
+
+  margin-bottom: 19px;
+}
+
+
+.register-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  color: #dce7f5;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.register-input-wrapper {
+  width: 100%;
+
+  position: relative;
+}
+
+
+.register-input-icon {
+  position: absolute;
+
+  left: 17px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #8da6c0;
+
+  pointer-events: none;
+
+  z-index: 2;
+}
+
+
+.register-input {
+  width: 100%;
+
+  height: 59px;
+
+  box-sizing: border-box;
+
+  padding:
+    0
+    52px
+    0
+    50px;
+
+  border-radius: 12px;
+
+  border: 1px solid #29425d;
+
+  background: #071a2c;
+
+  color: #f1f5f9;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.register-input::placeholder {
+  color: #657d95;
+}
+
+
+.register-input:focus {
+  border-color: #3298f4;
+
+  background: #092139;
+
+  box-shadow:
+    0 0 0 3px rgba(
+      37,
+      99,
+      235,
+      0.14
+    );
+}
+
+
+/* =========================================================
+   PASSWORD TOGGLE
+   ========================================================= */
+
+.register-password-toggle {
+  position: absolute;
+
+  right: 10px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #7892ad;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+
+.register-password-toggle:hover {
+  color: #60a5fa;
+
+  background: rgba(
+    96,
+    165,
+    250,
+    0.08
+  );
+}
+
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.register-error {
+  margin-bottom: 18px;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(
+    248,
+    113,
+    113,
+    0.35
+  );
+
+  background: rgba(
+    127,
+    29,
+    29,
+    0.20
+  );
+
+  color: #fca5a5;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.register-submit {
+  width: 100%;
+
+  height: 61px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb 0%,
+      #0891b2 100%
+    );
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 800;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 15px 32px rgba(
+      37,
+      99,
+      235,
+      0.22
+    );
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.register-submit:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 20px 40px rgba(
+      37,
+      99,
+      235,
+      0.30
+    );
+}
+
+
+.register-submit:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   LOGIN LINK
+   ========================================================= */
+
+.register-login-row {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 20px;
+
+  font-size: 15px;
+
+  color: #9fb4cc;
+}
+
+
+.register-login-row a {
+  color: #60a5fa;
+
+  font-weight: 700;
+
+  text-decoration: underline;
+
+  text-underline-offset: 3px;
+}
+
+
+.register-login-row a:hover {
+  color: #93c5fd;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .register-page {
+    grid-template-columns: 1fr 0.9fr;
+  }
+
+  .register-brand-panel {
+    padding-left: 40px;
+  }
+
+  .register-brand {
+    left: 40px;
+  }
+
+  .register-form-panel {
+    padding-right: 35px;
+  }
+
+  .register-card {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .register-hero-content h1 {
+    font-size: 62px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .register-page {
+    grid-template-columns: 1fr;
+
+    overflow-y: auto;
+  }
+
+  .register-brand-panel {
+    min-height: auto;
+
+    padding:
+      30px
+      25px
+      20px;
+  }
+
+  .register-brand {
+    position: relative;
+
+    left: auto;
+    top: auto;
+  }
+
+  .register-hero-content {
+    margin-top: 55px;
+  }
+
+  .register-form-panel {
+    min-height: auto;
+
+    padding:
+      15px
+      25px
+      45px;
+  }
+
+  .register-card {
+    max-width: 700px;
+
+    max-height: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .register-brand-panel {
+    padding:
+      25px
+      18px
+      10px;
+  }
+
+  .register-brand-icon {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 16px;
+  }
+
+  .register-brand-name {
+    font-size: 30px;
+  }
+
+  .register-brand-subtitle {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+
+  .register-hero-content {
+    margin-top: 45px;
+  }
+
+  .register-hero-content h1 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .register-hero-content p {
+    font-size: 16px;
+  }
+
+  .register-form-panel {
+    padding:
+      15px
+      15px
+      35px;
+  }
+
+  .register-card {
+    padding:
+      30px
+      22px
+      28px;
+
+    border-radius: 22px;
+  }
+
+  .register-card h2 {
+    font-size: 32px;
+  }
+
+  .register-role-box {
+    gap: 8px;
+  }
+
+  .register-role {
+    font-size: 14px;
+  }
+
+  .register-input {
+    height: 56px;
+
+    font-size: 16px;
+  }
+
+  .register-submit {
+    height: 58px;
+  }
+}

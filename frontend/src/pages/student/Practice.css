@@ -1,0 +1,607 @@
+.practice-page {
+  min-height: 100vh;
+  padding: 30px;
+  color: #e5edf8;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.practice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.practice-eyebrow {
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.practice-header h1 {
+  margin: 7px 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.practice-header p {
+  margin: 0;
+  color: #8fa4bd;
+  font-size: 14px;
+}
+
+.practice-header-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #60a5fa;
+}
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.practice-info-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px;
+  margin-bottom: 28px;
+  border-radius: 14px;
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+}
+
+.practice-info-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #60a5fa;
+}
+
+.practice-info-card strong {
+  color: #dbeafe;
+  font-size: 13px;
+}
+
+.practice-info-card p {
+  margin: 4px 0 0;
+  color: #8195ad;
+  font-size: 11px;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.practice-section-title {
+  margin-bottom: 15px;
+}
+
+.practice-section-title span {
+  color: #60a5fa;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.practice-section-title h2 {
+  margin: 5px 0 0;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.practice-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.practice-skill-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 28, 47, 0.94);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.practice-skill-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.practice-skill-icon {
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #60a5fa;
+}
+
+.practice-skill-content h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.practice-skill-content p {
+  margin: 6px 0;
+  color: #8195ad;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.practice-skill-content span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   QUESTION HEADER
+========================================= */
+
+.practice-question-header {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  align-items: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto 25px;
+}
+
+.practice-back-button {
+  width: fit-content;
+  border: none;
+  background: transparent;
+  color: #8fa4bd;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.practice-back-button:hover {
+  color: #ffffff;
+}
+
+.practice-question-title {
+  text-align: center;
+}
+
+.practice-question-title span {
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.practice-question-title h1 {
+  margin: 5px 0 0;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.practice-question-count {
+  justify-self: end;
+  color: #8195ad;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.practice-progress {
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+.practice-progress > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.practice-progress span {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.practice-progress strong {
+  color: #60a5fa;
+  font-size: 10px;
+}
+
+.practice-progress-track {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.practice-progress-track div {
+  height: 100%;
+  border-radius: inherit;
+  background: #2563eb;
+  transition: width 0.2s ease;
+}
+
+
+/* =========================================
+   QUESTION CARD
+========================================= */
+
+.practice-question-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(15, 28, 47, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.13);
+}
+
+.practice-question-number {
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.practice-question-card h2 {
+  margin: 12px 0 25px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.practice-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.practice-option {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 11px;
+  background: rgba(148, 163, 184, 0.04);
+  color: #b8c6d7;
+  text-align: left;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.practice-option:hover:not(:disabled) {
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.practice-option.selected {
+  border-color: #2563eb;
+  background: rgba(37, 99, 235, 0.1);
+  color: #ffffff;
+}
+
+.practice-option.correct {
+  border-color: rgba(34, 197, 94, 0.45);
+  background: rgba(34, 197, 94, 0.08);
+  color: #dcfce7;
+}
+
+.practice-option.incorrect {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: rgba(239, 68, 68, 0.07);
+  color: #fecaca;
+}
+
+.practice-option-letter {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(148, 163, 184, 0.08);
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.practice-option.correct
+.practice-option-letter {
+  background: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+}
+
+.practice-correct-icon {
+  margin-left: auto;
+  color: #4ade80;
+}
+
+
+/* =========================================
+   FEEDBACK
+========================================= */
+
+.practice-feedback {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 9px;
+  font-size: 11px;
+}
+
+.correct-feedback {
+  background: rgba(34, 197, 94, 0.07);
+  border: 1px solid rgba(34, 197, 94, 0.13);
+  color: #86efac;
+}
+
+.incorrect-feedback {
+  background: rgba(239, 68, 68, 0.07);
+  border: 1px solid rgba(239, 68, 68, 0.13);
+  color: #fca5a5;
+}
+
+
+/* =========================================
+   QUESTION ACTIONS
+========================================= */
+
+.practice-question-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+.practice-question-actions > span {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.practice-next-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 17px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.practice-next-button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.practice-next-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   RESULT
+========================================= */
+
+.practice-result {
+  max-width: 600px;
+  margin: 65px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(15, 28, 47, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.13);
+}
+
+.practice-result-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.1);
+  color: #60a5fa;
+}
+
+.practice-result-eyebrow {
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.practice-result h1 {
+  margin: 8px 0;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.practice-result > p {
+  margin: 0;
+  color: #8195ad;
+  font-size: 12px;
+}
+
+.practice-result-score {
+  width: 145px;
+  height: 145px;
+  margin: 28px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.1);
+  border: 7px solid rgba(37, 99, 235, 0.18);
+}
+
+.practice-result-score strong {
+  color: #ffffff;
+  font-size: 29px;
+}
+
+.practice-result-score span {
+  margin-top: 3px;
+  color: #8195ad;
+  font-size: 9px;
+}
+
+.practice-result-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.practice-result-stats div {
+  padding: 12px;
+  border-radius: 9px;
+  background: rgba(148, 163, 184, 0.05);
+}
+
+.practice-result-stats span {
+  display: block;
+  color: #64748b;
+  font-size: 9px;
+}
+
+.practice-result-stats strong {
+  display: block;
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.practice-result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 23px;
+}
+
+.practice-primary-button,
+.practice-secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 15px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.practice-primary-button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.practice-secondary-button {
+  background: rgba(148, 163, 184, 0.08);
+  color: #aebed1;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+  .practice-skill-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .practice-page {
+    padding: 18px;
+  }
+
+  .practice-header-icon {
+    display: none;
+  }
+
+  .practice-skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-question-header {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-question-title {
+    text-align: left;
+  }
+
+  .practice-question-count {
+    justify-self: start;
+  }
+
+  .practice-question-card {
+    padding: 20px;
+  }
+
+  .practice-result-actions {
+    flex-direction: column;
+  }
+
+  .practice-result-stats {
+    grid-template-columns: 1fr;
+  }
+}

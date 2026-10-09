@@ -1,0 +1,521 @@
+/* ========================================
+   RECRUITER STUDENT PROFILE
+======================================== */
+
+.candidate-details-page {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  color: #e5eefb;
+}
+
+/* ========================================
+   BACK
+======================================== */
+
+.candidate-back-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 22px;
+
+  padding: 9px 12px;
+
+  border: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.13
+  );
+
+  border-radius: 9px;
+
+  background: rgba(
+    15,
+    30,
+    50,
+    0.7
+  );
+
+  color: #91a8c0;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.candidate-back-button:hover {
+  color: #e3effd;
+
+  border-color: rgba(
+    96,
+    165,
+    250,
+    0.28
+  );
+}
+
+/* ========================================
+   PROFILE HEADER
+======================================== */
+
+.candidate-profile-header {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 26px;
+
+  border: 1px solid rgba(
+    96,
+    165,
+    250,
+    0.13
+  );
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(30, 64, 175, 0.15),
+      rgba(8, 145, 178, 0.06)
+    ),
+    rgba(10, 23, 41, 0.78);
+}
+
+.profile-avatar-large {
+  display: grid;
+  place-items: center;
+
+  width: 78px;
+  height: 78px;
+
+  flex-shrink: 0;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #0891b2
+    );
+
+  color: white;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.profile-header-info {
+  flex: 1;
+}
+
+.profile-badge {
+  display: inline-flex;
+
+  margin-bottom: 7px;
+
+  color: #60a5fa;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+}
+
+.profile-header-info h1 {
+  margin: 0;
+
+  color: #f5f9ff;
+
+  font-size: 28px;
+}
+
+.profile-header-info p {
+  margin: 6px 0;
+
+  color: #a9bad0;
+
+  font-size: 14px;
+}
+
+.profile-header-info > span {
+  color: #607992;
+
+  font-size: 12px;
+}
+
+.profile-match-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 110px;
+
+  padding: 15px;
+
+  border: 1px solid rgba(
+    34,
+    197,
+    94,
+    0.16
+  );
+
+  border-radius: 13px;
+
+  background: rgba(
+    34,
+    197,
+    94,
+    0.06
+  );
+
+  color: #86efac;
+}
+
+.profile-match-box strong {
+  margin-top: 5px;
+
+  font-size: 24px;
+}
+
+.profile-match-box span {
+  margin-top: 2px;
+
+  color: #7890a8;
+
+  font-size: 10px;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+
+.profile-section {
+  margin-top: 24px;
+
+  padding: 24px;
+
+  border: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.10
+  );
+
+  border-radius: 16px;
+
+  background: rgba(
+    10,
+    23,
+    41,
+    0.65
+  );
+}
+
+.section-heading {
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #eef5ff;
+
+  font-size: 19px;
+}
+
+.section-heading p {
+  margin: 5px 0 0;
+
+  color: #758ca4;
+
+  font-size: 13px;
+}
+
+/* ========================================
+   INFO GRID
+======================================== */
+
+.profile-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.profile-info-card {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px;
+
+  border: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.09
+  );
+
+  border-radius: 11px;
+
+  background: rgba(
+    5,
+    18,
+    32,
+    0.6
+  );
+}
+
+.profile-info-card > svg {
+  color: #60a5fa;
+
+  flex-shrink: 0;
+}
+
+.profile-info-card div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.profile-info-card span {
+  color: #627991;
+
+  font-size: 11px;
+}
+
+.profile-info-card strong {
+  color: #dce9f8;
+
+  font-size: 13px;
+}
+
+/* ========================================
+   SKILLS
+======================================== */
+
+.profile-skills,
+.profile-languages {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.profile-skills span,
+.profile-languages span {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 8px 11px;
+
+  border: 1px solid rgba(
+    96,
+    165,
+    250,
+    0.13
+  );
+
+  border-radius: 8px;
+
+  background: rgba(
+    37,
+    99,
+    235,
+    0.07
+  );
+
+  color: #a9c7e8;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.profile-languages span {
+  background: rgba(
+    6,
+    182,
+    212,
+    0.06
+  );
+}
+
+/* ========================================
+   ELIGIBILITY
+======================================== */
+
+.eligibility-card {
+  padding: 18px;
+
+  border: 1px solid rgba(
+    34,
+    197,
+    94,
+    0.14
+  );
+
+  border-radius: 12px;
+
+  background: rgba(
+    34,
+    197,
+    94,
+    0.04
+  );
+}
+
+.eligibility-status {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 17px;
+
+  color: #86efac;
+}
+
+.eligibility-status > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.eligibility-status strong {
+  color: #86efac;
+
+  font-size: 15px;
+}
+
+.eligibility-status span {
+  color: #7890a0;
+
+  font-size: 12px;
+}
+
+.matched-requirements {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 9px;
+}
+
+.matched-item {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #a9c3b2;
+
+  font-size: 12px;
+}
+
+.matched-item svg {
+  flex-shrink: 0;
+
+  color: #4ade80;
+}
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.profile-actions {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.primary-profile-button,
+.secondary-profile-button {
+  min-height: 44px;
+
+  padding: 0 18px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.primary-profile-button {
+  border: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #0891b2
+    );
+
+  color: white;
+}
+
+.secondary-profile-button {
+  border: 1px solid rgba(
+    148,
+    163,
+    184,
+    0.14
+  );
+
+  background: rgba(
+    15,
+    30,
+    50,
+    0.7
+  );
+
+  color: #a9bad0;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .candidate-profile-header {
+    flex-wrap: wrap;
+  }
+
+  .profile-match-box {
+    width: 100%;
+  }
+
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .matched-requirements {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+}

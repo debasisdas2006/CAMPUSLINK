@@ -1,0 +1,2706 @@
+/* =========================================================
+   CAMPUSLINK
+   RECRUITER APPLICATIONS
+   Dark Dashboard Theme
+   ========================================================= */
+
+.recruiter-applications-page {
+  min-height: 100%;
+  padding: 30px;
+
+  background:
+    radial-gradient(
+      circle at 15% 0%,
+      rgba(37, 99, 235, 0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 100% 20%,
+      rgba(14, 165, 233, 0.06),
+      transparent 28%
+    ),
+    #071426;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.recruiter-applications-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.recruiter-applications-eyebrow {
+  margin-bottom: 7px;
+
+  color: #3b82f6;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.recruiter-applications-header h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 30px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.recruiter-applications-header p {
+  max-width: 680px;
+
+  margin: 9px 0 0;
+
+  color: #7fa1c9;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.recruiter-applications-header-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #19385e;
+  border-radius: 15px;
+
+  background: #0c1d34;
+
+  color: #4da3ff;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.recruiter-application-stat-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+.recruiter-application-stat {
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 17px;
+
+  border: 1px solid #173452;
+  border-radius: 14px;
+
+  background: #0a192d;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.recruiter-application-stat:hover {
+  transform: translateY(-2px);
+
+  border-color: #24558a;
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.recruiter-application-stat > div:last-child {
+  min-width: 0;
+}
+
+.recruiter-application-stat span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #7898bd;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recruiter-application-stat strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 27px;
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   STAT ICONS
+   ========================================================= */
+
+.application-stat-icon {
+  width: 44px;
+  height: 44px;
+
+  min-width: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+}
+
+.application-stat-icon.total {
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+
+.application-stat-icon.pending {
+  background: rgba(245, 158, 11, 0.11);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+}
+
+.application-stat-icon.accepted {
+  background: rgba(34, 197, 94, 0.11);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+.application-stat-icon.rejected {
+  background: rgba(239, 68, 68, 0.11);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+
+.application-stat-icon.selected {
+  background: rgba(168, 85, 247, 0.11);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  color: #c084fc;
+}
+
+
+/* =========================================================
+   FILTER CARD
+   ========================================================= */
+
+.recruiter-applications-filter-card {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    230px;
+
+  gap: 16px;
+
+  margin-bottom: 26px;
+
+  padding: 16px;
+
+  border: 1px solid #173452;
+  border-radius: 14px;
+
+  background: #0a192d;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.applications-search-box {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 0 15px;
+
+  border: 1px solid #1c3b60;
+  border-radius: 10px;
+
+  background: #08172a;
+
+  color: #5da8ff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.applications-search-box:focus-within {
+  border-color: #2878cf;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+.applications-search-box input {
+  width: 100%;
+
+  padding: 12px 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+.applications-search-box input::placeholder {
+  color: #58799f;
+}
+
+
+/* =========================================================
+   STATUS FILTER
+   ========================================================= */
+
+.applications-status-filter {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.applications-status-filter label {
+  color: #7898bd;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.applications-status-filter select {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 11px 12px;
+
+  border: 1px solid #1c3b60;
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #08172a;
+
+  color: #dcecff;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.applications-status-filter select:focus {
+  border-color: #2878cf;
+}
+
+.applications-status-filter option {
+  background: #0a192d;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   APPLICATION SECTION
+   ========================================================= */
+
+.recruiter-applications-section {
+  margin-top: 4px;
+}
+
+.recruiter-applications-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.recruiter-applications-section-header h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.recruiter-applications-section-header p {
+  margin: 5px 0 0;
+
+  color: #6687ad;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   APPLICATION LIST
+   ========================================================= */
+
+.recruiter-application-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+
+/* =========================================================
+   APPLICATION CARD
+   ========================================================= */
+
+.recruiter-application-card {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 20px;
+
+  border: 1px solid #173452;
+  border-radius: 15px;
+
+  background: #09192d;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.13);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.recruiter-application-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background: #2563eb;
+
+  opacity: 0.65;
+}
+
+.recruiter-application-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #24517d;
+
+  box-shadow:
+    0 13px 32px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.recruiter-application-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-bottom: 17px;
+}
+
+.recruiter-application-student {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  min-width: 0;
+}
+
+.recruiter-application-avatar {
+  width: 48px;
+  height: 48px;
+
+  min-width: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #102746;
+
+  border: 1px solid #1d4773;
+
+  color: #55a6ff;
+}
+
+.recruiter-application-student h3 {
+  margin: 0 0 5px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.recruiter-application-email {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  max-width: 350px;
+
+  color: #6f91b7;
+
+  font-size: 12px;
+}
+
+.recruiter-application-email span {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+   ========================================================= */
+
+.application-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.application-status-badge.pending {
+  color: #fbbf24;
+
+  background: rgba(245, 158, 11, 0.09);
+
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.application-status-badge.accepted {
+  color: #4ade80;
+
+  background: rgba(34, 197, 94, 0.09);
+
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.application-status-badge.interview-scheduled {
+  color: #60a5fa;
+
+  background: rgba(59, 130, 246, 0.09);
+
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.application-status-badge.interview-completed {
+  color: #a78bfa;
+
+  background: rgba(139, 92, 246, 0.09);
+
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.application-status-badge.selected {
+  color: #c084fc;
+
+  background: rgba(168, 85, 247, 0.09);
+
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.application-status-badge.rejected {
+  color: #f87171;
+
+  background: rgba(239, 68, 68, 0.09);
+
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+
+/* =========================================================
+   JOB INFORMATION
+   ========================================================= */
+
+.recruiter-application-job {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+
+  padding: 13px 14px;
+
+  border: 1px solid #153452;
+  border-radius: 11px;
+
+  background: #0b1d33;
+}
+
+.application-job-icon {
+  width: 39px;
+  height: 39px;
+
+  min-width: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #10294a;
+
+  color: #4da3ff;
+}
+
+.recruiter-application-job strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.recruiter-application-job span {
+  display: block;
+
+  color: #6889b0;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+   ========================================================= */
+
+.recruiter-application-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr
+    1.5fr;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.application-info-item {
+  min-width: 0;
+
+  padding: 12px 13px;
+
+  border: 1px solid #142f4d;
+  border-radius: 10px;
+
+  background: #08182b;
+}
+
+.application-info-item span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #607fa4;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.application-info-item strong {
+  display: block;
+
+  overflow: hidden;
+
+  color: #dcecff;
+
+  font-size: 13px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.application-info-item .match-score {
+  color: #35e58b;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   ACCEPTED NOTE
+   ========================================================= */
+
+.application-accepted-note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-bottom: 15px;
+
+  padding: 11px 13px;
+
+  border: 1px solid rgba(34, 197, 94, 0.18);
+  border-radius: 10px;
+
+  background: rgba(34, 197, 94, 0.055);
+
+  color: #65e89b;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.application-accepted-note svg {
+  min-width: 17px;
+  margin-top: 1px;
+}
+
+
+/* =========================================================
+   REJECTION NOTE
+   ========================================================= */
+
+.application-rejection-note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin-bottom: 15px;
+
+  padding: 12px 13px;
+
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 10px;
+
+  background: rgba(239, 68, 68, 0.06);
+
+  color: #fca5a5;
+}
+
+.application-rejection-note svg {
+  min-width: 17px;
+  margin-top: 1px;
+}
+
+.application-rejection-note strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #f87171;
+
+  font-size: 12px;
+}
+
+.application-rejection-note p {
+  margin: 0;
+
+  color: #d99191;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE
+   ========================================================= */
+
+.application-interview-note {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  padding: 14px 15px;
+
+  border: 1px solid rgba(59, 130, 246, 0.30);
+  border-radius: 10px;
+
+  background: #0b1d33 !important;
+
+  color: #ffffff !important;
+
+  opacity: 1;
+  visibility: visible;
+
+  overflow: hidden;
+}
+
+.application-interview-note:hover {
+  background: #0b1d33 !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - ICON
+   ========================================================= */
+
+.application-interview-note svg {
+  flex-shrink: 0;
+
+  min-width: 18px;
+
+  margin-top: 2px;
+
+  color: #60a5fa !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - ALL DIRECT CHILDREN
+   IMPORTANT WHITE-BOX FIX
+   ========================================================= */
+
+.application-interview-note > div {
+  width: 100%;
+  min-width: 0;
+
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - NESTED CHILDREN
+   IMPORTANT WHITE-BOX FIX
+   ========================================================= */
+
+.application-interview-note > div > div {
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.application-interview-note > div > div > div {
+  background: transparent !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - TITLE
+   ========================================================= */
+
+.application-interview-note strong {
+  display: block !important;
+
+  margin: 0 0 7px !important;
+
+  color: #60a5fa !important;
+
+  font-size: 13px !important;
+  font-weight: 800 !important;
+
+  line-height: 1.4 !important;
+
+  background: transparent !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - NORMAL TEXT
+   ========================================================= */
+
+.application-interview-note p {
+  display: block !important;
+
+  margin: 5px 0 !important;
+
+  padding: 0 !important;
+
+  color: #dcecff !important;
+
+  background: transparent !important;
+
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - LABELS
+   ========================================================= */
+
+.application-interview-note span {
+  background: transparent !important;
+
+  color: #dcecff !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - LABEL TEXT
+   ========================================================= */
+
+.application-interview-note p strong,
+.application-interview-note span strong {
+  display: inline !important;
+
+  margin: 0 !important;
+
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-size: inherit !important;
+  font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - POSSIBLE DETAIL BOXES
+   THESE PREVENT WHITE INNER BOXES
+   ========================================================= */
+
+.application-interview-note [class*="detail"],
+.application-interview-note [class*="date"],
+.application-interview-note [class*="time"],
+.application-interview-note [class*="duration"],
+.application-interview-note [class*="interview"] {
+  background: transparent !important;
+
+  color: #dcecff !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - DATE
+   ========================================================= */
+
+.application-interview-note .date,
+.application-interview-note .interview-date,
+.application-interview-note .application-interview-date {
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - TIME
+   ========================================================= */
+
+.application-interview-note .time,
+.application-interview-note .interview-time,
+.application-interview-note .application-interview-time {
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   INTERVIEW NOTE - DURATION
+   ========================================================= */
+
+.application-interview-note .duration,
+.application-interview-note .interview-duration,
+.application-interview-note .application-interview-duration {
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.recruiter-application-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding-top: 4px;
+}
+
+.application-view-button,
+.application-accept-button,
+.application-reject-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 13px;
+
+  border-radius: 9px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.application-view-button {
+  border: 1px solid #1d4773;
+
+  background: #0d223b;
+
+  color: #66adff;
+}
+
+.application-view-button:hover {
+  background: #112d4b;
+
+  border-color: #28639a;
+}
+
+.application-accept-button {
+  border: 1px solid rgba(34, 197, 94, 0.3);
+
+  background: rgba(34, 197, 94, 0.1);
+
+  color: #4ade80;
+}
+
+.application-accept-button:hover {
+  background: rgba(34, 197, 94, 0.17);
+}
+
+.application-reject-button {
+  border: 1px solid rgba(239, 68, 68, 0.28);
+
+  background: rgba(239, 68, 68, 0.08);
+
+  color: #f87171;
+}
+
+.application-reject-button:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.application-view-button:disabled,
+.application-accept-button:disabled,
+.application-reject-button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.recruiter-applications-empty {
+  padding: 55px 25px;
+
+  border: 1px dashed #1c3d62;
+  border-radius: 15px;
+
+  background: #09192d;
+
+  text-align: center;
+}
+
+.applications-empty-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+
+  background: #0e2644;
+
+  color: #4da3ff;
+}
+
+.recruiter-applications-empty h3 {
+  margin: 0 0 7px;
+
+  color: #ffffff;
+
+  font-size: 18px;
+}
+
+.recruiter-applications-empty p {
+  max-width: 440px;
+
+  margin: 0 auto;
+
+  color: #6687ad;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.applications-loading {
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #7293b9;
+}
+
+.applications-loading-spinner {
+  width: 35px;
+  height: 35px;
+
+  border: 3px solid #173452;
+  border-top-color: #3b82f6;
+
+  border-radius: 50%;
+
+  animation: applicationsSpin 0.8s linear infinite;
+}
+
+@keyframes applicationsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.application-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(2, 8, 20, 0.78);
+
+  backdrop-filter: blur(7px);
+}
+
+.application-modal {
+  width: min(650px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border: 1px solid #21466e;
+  border-radius: 17px;
+
+  background: #091a2e;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45);
+
+  color: #ffffff;
+}
+
+.application-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 22px 24px;
+
+  border-bottom: 1px solid #173452;
+}
+
+.application-modal-header span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #3b82f6;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+.application-modal-header h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 21px;
+}
+
+.application-modal-close {
+  width: 36px;
+  height: 36px;
+
+  min-width: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #214568;
+  border-radius: 9px;
+
+  background: #0d223b;
+
+  color: #82a9d3;
+
+  cursor: pointer;
+}
+
+.application-modal-close:hover {
+  background: #12304f;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   MODAL BODY
+   ========================================================= */
+
+.application-modal-body {
+  padding: 20px 24px;
+}
+
+.application-detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid #132e4b;
+}
+
+.application-detail-row:last-child {
+  border-bottom: none;
+}
+
+.application-detail-row > span {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #6e8eaf;
+
+  font-size: 12px;
+}
+
+.application-detail-row strong {
+  max-width: 60%;
+
+  overflow: hidden;
+
+  color: #e6f1ff;
+
+  font-size: 13px;
+
+  text-align: right;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal-match-score {
+  color: #35e58b !important;
+
+  font-size: 18px !important;
+}
+
+
+/* =========================================================
+   MODAL REJECTION
+   ========================================================= */
+
+.application-modal-rejection {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-top: 18px;
+
+  padding: 13px;
+
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 10px;
+
+  background: rgba(239, 68, 68, 0.06);
+
+  color: #f87171;
+}
+
+.application-modal-rejection strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #f87171;
+}
+
+.application-modal-rejection p {
+  margin: 0;
+
+  color: #d99191;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   MODAL INTERVIEW
+   ========================================================= */
+
+.application-modal-interview {
+  margin-top: 18px;
+
+  padding: 15px;
+
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 11px;
+
+  background: #0b1d33 !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.application-modal-interview > div {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 10px;
+
+  color: #60a5fa !important;
+
+  background: transparent !important;
+
+  font-weight: 800;
+}
+
+.application-modal-interview p {
+  margin: 5px 0;
+
+  color: #dcecff !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+.application-modal-interview strong,
+.application-modal-interview span {
+  background: transparent !important;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+   ========================================================= */
+
+.application-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 16px 24px;
+
+  border-top: 1px solid #173452;
+}
+
+
+/* =========================================================
+   REJECTION MODAL
+   ========================================================= */
+
+.application-reject-modal {
+  width: min(540px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border: 1px solid #21466e;
+  border-radius: 17px;
+
+  background: #091a2e;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.application-reject-content {
+  padding: 20px 24px;
+}
+
+.reject-warning {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 11px;
+
+  margin-bottom: 20px;
+
+  padding: 13px;
+
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 10px;
+
+  background: rgba(245, 158, 11, 0.06);
+
+  color: #fbbf24;
+}
+
+.reject-warning strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #fbbf24;
+
+  font-size: 13px;
+}
+
+.reject-warning p {
+  margin: 0;
+
+  color: #b69a69;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.application-reject-content > label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #91afd0;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.application-reject-content textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  resize: vertical;
+
+  min-height: 120px;
+
+  padding: 13px;
+
+  border: 1px solid #1c3d62;
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #07172a;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.application-reject-content textarea::placeholder {
+  color: #506f92;
+}
+
+.application-reject-content textarea:focus {
+  border-color: #2878cf;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.application-reject-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 16px 24px;
+
+  border-top: 1px solid #173452;
+}
+
+.application-cancel-button {
+  padding: 9px 15px;
+
+  border: 1px solid #1c3d62;
+  border-radius: 9px;
+
+  background: #0c2037;
+
+  color: #8aa9ca;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.application-cancel-button:hover {
+  background: #112b48;
+
+  color: #ffffff;
+}
+
+.application-confirm-reject-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 9px;
+
+  background: rgba(239, 68, 68, 0.1);
+
+  color: #f87171;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.application-confirm-reject-button:hover {
+  background: rgba(239, 68, 68, 0.17);
+}
+
+
+/* =========================================================
+   SCHEDULE INTERVIEW MODAL
+   ========================================================= */
+
+.application-schedule-modal {
+  width: min(560px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border: 1px solid #21466e;
+
+  border-radius: 17px;
+
+  background: #091a2e !important;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45);
+
+  color: #ffffff !important;
+}
+
+.application-schedule-content {
+  padding: 20px 24px;
+
+  background: #091a2e !important;
+
+  color: #ffffff !important;
+}
+
+.application-schedule-intro {
+  margin-bottom: 20px;
+
+  padding: 12px 13px;
+
+  border: 1px solid rgba(59, 130, 246, 0.2);
+
+  border-radius: 10px;
+
+  background: #0b1d33 !important;
+
+  color: #dcecff !important;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.application-schedule-intro strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #60a5fa !important;
+
+  background: transparent !important;
+
+  font-size: 13px;
+}
+
+.application-schedule-intro p,
+.application-schedule-intro span {
+  color: #dcecff !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   SCHEDULE FORM
+   ========================================================= */
+
+.application-schedule-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  background: #091a2e !important;
+}
+
+.application-schedule-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  background: transparent !important;
+}
+
+.application-schedule-field label {
+  display: block;
+
+  color: #91afd0 !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SCHEDULE INPUTS
+   ========================================================= */
+
+.application-schedule-field input,
+.application-schedule-field select,
+.application-schedule-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 11px 12px;
+
+  border: 1px solid #1c3d62;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  opacity: 1 !important;
+}
+
+.application-schedule-field input::placeholder,
+.application-schedule-field textarea::placeholder {
+  color: #506f92 !important;
+
+  opacity: 1 !important;
+}
+
+.application-schedule-field input:focus,
+.application-schedule-field select:focus,
+.application-schedule-field textarea:focus {
+  border-color: #2878cf;
+
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================================
+   DATE AND TIME
+   ========================================================= */
+
+.application-schedule-date-time {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 12px;
+
+  background: transparent !important;
+}
+
+
+/* Keep browser date/time controls dark */
+
+.application-schedule-field input[type="date"],
+.application-schedule-field input[type="time"] {
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  color-scheme: dark;
+
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+.application-schedule-field input[type="date"]::-webkit-calendar-picker-indicator,
+.application-schedule-field input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  opacity: 0.9;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.application-schedule-field select {
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  cursor: pointer;
+}
+
+.application-schedule-field select option {
+  background: #0a192d !important;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.application-schedule-field textarea {
+  min-height: 100px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+
+  background: #07172a !important;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   SCHEDULE FOOTER
+   ========================================================= */
+
+.application-schedule-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 16px 24px;
+
+  border-top: 1px solid #173452;
+
+  background: #091a2e !important;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+   ========================================================= */
+
+.application-schedule-cancel-button {
+  padding: 9px 15px;
+
+  border: 1px solid #1c3d62;
+
+  border-radius: 9px;
+
+  background: #0c2037 !important;
+
+  color: #8aa9ca !important;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.application-schedule-cancel-button:hover {
+  background: #112b48 !important;
+
+  color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CONFIRM BUTTON
+   ========================================================= */
+
+.application-schedule-confirm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border: 1px solid rgba(34, 197, 94, 0.3);
+
+  border-radius: 9px;
+
+  background: rgba(34, 197, 94, 0.1) !important;
+
+  color: #4ade80 !important;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.application-schedule-confirm-button:hover {
+  background: rgba(34, 197, 94, 0.17) !important;
+
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.application-schedule-confirm-button:disabled,
+.application-schedule-cancel-button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+.application-modal::-webkit-scrollbar,
+.application-reject-modal::-webkit-scrollbar,
+.application-schedule-modal::-webkit-scrollbar {
+  width: 7px;
+}
+
+.application-modal::-webkit-scrollbar-track,
+.application-reject-modal::-webkit-scrollbar-track,
+.application-schedule-modal::-webkit-scrollbar-track {
+  background: #071426;
+}
+
+.application-modal::-webkit-scrollbar-thumb,
+.application-reject-modal::-webkit-scrollbar-thumb,
+.application-schedule-modal::-webkit-scrollbar-thumb {
+  background: #21476f;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .recruiter-application-stat-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .recruiter-applications-filter-card {
+    grid-template-columns: 1fr;
+  }
+
+  .recruiter-application-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .recruiter-applications-page {
+    padding: 20px;
+  }
+
+  .recruiter-applications-header {
+    align-items: flex-start;
+  }
+
+  .recruiter-application-stat-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .recruiter-application-card-top {
+    flex-direction: column;
+  }
+
+  .recruiter-application-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .application-status-badge {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .application-schedule-content {
+    padding: 18px 17px;
+  }
+
+  .application-schedule-date-time {
+    grid-template-columns: 1fr;
+  }
+
+  .application-schedule-footer {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .recruiter-applications-page {
+    padding: 15px;
+  }
+
+  .recruiter-applications-header h1 {
+    font-size: 25px;
+  }
+
+  .recruiter-applications-header-icon {
+    display: none;
+  }
+
+  .recruiter-application-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-status-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .recruiter-application-actions {
+    flex-wrap: wrap;
+  }
+
+  .application-modal-header,
+  .application-modal-body,
+  .application-modal-footer,
+  .application-reject-content,
+  .application-reject-footer {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .application-detail-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .application-detail-row strong {
+    max-width: 100%;
+
+    text-align: left;
+  }
+}
+
+
+/* =========================================================
+   FINAL INTERVIEW BOX OVERRIDE
+   THIS IS THE IMPORTANT WHITE-BOX FIX
+   ========================================================= */
+
+.recruiter-applications-page
+.application-interview-note,
+.recruiter-applications-page
+.application-interview-note *,
+.recruiter-applications-page
+.application-interview-note *::before,
+.recruiter-applications-page
+.application-interview-note *::after {
+  box-sizing: border-box;
+}
+
+.recruiter-applications-page
+.application-interview-note {
+  background: #0b1d33 !important;
+
+  border-color: rgba(59, 130, 246, 0.35) !important;
+
+  color: #ffffff !important;
+}
+
+.recruiter-applications-page
+.application-interview-note
+> div,
+.recruiter-applications-page
+.application-interview-note
+> div
+> div,
+.recruiter-applications-page
+.application-interview-note
+> div
+> div
+> div {
+  background: transparent !important;
+
+  color: #ffffff !important;
+}
+
+.recruiter-applications-page
+.application-interview-note
+strong {
+  color: #60a5fa !important;
+
+  background: transparent !important;
+}
+
+.recruiter-applications-page
+.application-interview-note
+p {
+  color: #dcecff !important;
+
+  background: transparent !important;
+}
+
+.recruiter-applications-page
+.application-interview-note
+span {
+  color: #dcecff !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   FINAL MODAL BOX OVERRIDE
+   ========================================================= */
+
+.recruiter-applications-page
+.application-modal-interview,
+.recruiter-applications-page
+.application-modal-interview * {
+  background-color: transparent;
+}
+
+.recruiter-applications-page
+.application-modal-interview {
+  background: #0b1d33 !important;
+
+  color: #ffffff !important;
+
+  border-color: rgba(59, 130, 246, 0.35) !important;
+}
+
+.recruiter-applications-page
+.application-modal-interview
+strong,
+.recruiter-applications-page
+.application-modal-interview
+span {
+  color: #ffffff !important;
+}
+
+.recruiter-applications-page
+.application-modal-interview
+p {
+  color: #dcecff !important;
+}
+/* =========================================================
+   FINAL INTERVIEW SCHEDULED BOX
+   ========================================================= */
+
+.recruiter-interview-scheduled-box {
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-top: 18px;
+  margin-bottom: 15px;
+
+  padding: 16px;
+
+  border: 1px solid #21466e;
+  border-radius: 14px;
+
+  background: #0b1d33 !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.14);
+
+  overflow: hidden;
+}
+
+.recruiter-interview-scheduled-header {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 14px;
+
+  color: #60a5fa !important;
+
+  background: transparent !important;
+}
+
+.recruiter-interview-scheduled-header svg {
+  color: #60a5fa !important;
+
+  flex-shrink: 0;
+}
+
+.recruiter-interview-scheduled-header strong {
+  color: #60a5fa !important;
+
+  background: transparent !important;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.recruiter-interview-scheduled-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+
+  background: transparent !important;
+}
+
+.recruiter-interview-detail {
+  min-width: 0;
+
+  padding: 11px 12px;
+
+  border: 1px solid #173d63;
+  border-radius: 10px;
+
+  background: #08182b !important;
+
+  color: #ffffff !important;
+}
+
+.recruiter-interview-detail span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #7898bd !important;
+
+  background: transparent !important;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.recruiter-interview-detail strong {
+  display: block;
+
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  line-height: 1.4;
+}
+
+.recruiter-interview-instructions {
+  margin-top: 10px;
+
+  padding: 11px 12px;
+
+  border: 1px solid #173d63;
+  border-radius: 10px;
+
+  background: #08182b !important;
+}
+
+.recruiter-interview-instructions span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #7898bd !important;
+
+  background: transparent !important;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.recruiter-interview-instructions p {
+  margin: 0;
+
+  color: #dcecff !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   INTERVIEW DETAILS IN VIEW APPLICATION MODAL
+   ========================================================= */
+
+.recruiter-interview-modal-box {
+  margin-top: 20px;
+
+  padding: 16px;
+
+  border: 1px solid #21466e;
+  border-radius: 14px;
+
+  background: #0b1d33 !important;
+
+  color: #ffffff !important;
+}
+
+.recruiter-interview-modal-header {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 14px;
+
+  color: #60a5fa !important;
+
+  background: transparent !important;
+}
+
+.recruiter-interview-modal-header svg {
+  color: #60a5fa !important;
+}
+
+.recruiter-interview-modal-header strong {
+  color: #60a5fa !important;
+
+  background: transparent !important;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.recruiter-interview-modal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 15px;
+
+  padding: 9px 0;
+
+  border-bottom: 1px solid #173452;
+
+  background: transparent !important;
+}
+
+.recruiter-interview-modal-row:last-child {
+  border-bottom: none;
+}
+
+.recruiter-interview-modal-row span {
+  flex-shrink: 0;
+
+  color: #7898bd !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.recruiter-interview-modal-row strong {
+  color: #ffffff !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+
+  text-align: right;
+}
+
+.recruiter-interview-instruction-value {
+  max-width: 65%;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SCHEDULE INTERVIEW MODAL
+   ========================================================= */
+
+.application-schedule-modal {
+  width: min(560px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border: 1px solid #21466e !important;
+  border-radius: 17px !important;
+
+  background: #091a2e !important;
+
+  color: #ffffff !important;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.application-schedule-modal
+.application-modal-header {
+  background: #091a2e !important;
+
+  color: #ffffff !important;
+}
+
+.application-schedule-content {
+  padding: 20px 24px;
+
+  background: #091a2e !important;
+
+  color: #ffffff !important;
+}
+
+.application-schedule-intro {
+  margin-bottom: 20px;
+
+  padding: 13px 14px;
+
+  border: 1px solid #21466e;
+
+  border-radius: 11px;
+
+  background: #0b1d33 !important;
+
+  color: #dcecff !important;
+}
+
+.application-schedule-intro strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #60a5fa !important;
+
+  background: transparent !important;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.application-schedule-intro span {
+  display: block;
+
+  color: #dcecff !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+}
+
+.application-schedule-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  background: #091a2e !important;
+}
+
+.application-schedule-field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  background: transparent !important;
+}
+
+.application-schedule-field label {
+  color: #91afd0 !important;
+
+  background: transparent !important;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.application-schedule-field input,
+.application-schedule-field select,
+.application-schedule-field textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  border: 1px solid #1c3d62 !important;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  opacity: 1 !important;
+}
+
+.application-schedule-field input:focus,
+.application-schedule-field select:focus,
+.application-schedule-field textarea:focus {
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  border-color: #2878cf !important;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.application-schedule-field
+input::placeholder,
+.application-schedule-field
+textarea::placeholder {
+  color: #506f92 !important;
+
+  opacity: 1;
+}
+
+.application-schedule-field select option {
+  background: #0a192d !important;
+
+  color: #ffffff !important;
+}
+
+.application-schedule-field
+input[type="date"],
+.application-schedule-field
+input[type="time"] {
+  background: #07172a !important;
+
+  color: #ffffff !important;
+
+  color-scheme: dark;
+}
+
+.application-schedule-field
+input[type="date"]::-webkit-calendar-picker-indicator,
+.application-schedule-field
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+
+  opacity: 0.9;
+}
+
+.application-schedule-field textarea {
+  min-height: 105px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+.application-schedule-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 16px 24px;
+
+  border-top: 1px solid #173452;
+
+  background: #091a2e !important;
+}
+
+.application-schedule-cancel-button {
+  padding: 9px 15px;
+
+  border: 1px solid #1c3d62;
+
+  border-radius: 9px;
+
+  background: #0c2037 !important;
+
+  color: #8aa9ca !important;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.application-schedule-cancel-button:hover {
+  background: #112b48 !important;
+
+  color: #ffffff !important;
+}
+
+.application-schedule-confirm-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 9px 15px;
+
+  border: 1px solid rgba(34, 197, 94, 0.3);
+
+  border-radius: 9px;
+
+  background: rgba(34, 197, 94, 0.1) !important;
+
+  color: #4ade80 !important;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.application-schedule-confirm-button:hover {
+  background: rgba(34, 197, 94, 0.17) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE INTERVIEW BOX
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .recruiter-interview-scheduled-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruiter-interview-modal-row {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .recruiter-interview-modal-row strong {
+    text-align: left;
+  }
+
+  .recruiter-interview-instruction-value {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .application-schedule-content {
+    padding: 18px 17px;
+  }
+
+  .application-schedule-footer {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}

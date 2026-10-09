@@ -1,0 +1,240 @@
+
+# ============================================================
+# ADAPTIVE NEXT QUESTION
+# ============================================================
+
+def select_next_adaptive_question(
+    questions: Optional[
+        List[Dict[str, Any]]
+    ] = None,
+    current_difficulty: str = "medium",
+    performance_profile: Optional[
+        Dict[str, Any]
+    ] = None,
+    used_question_ids: Optional[
+        List[str]
+    ] = None,
+    weak_skills: Optional[
+        List[str]
+    ] = None,
+    seed: Optional[int] = None,
+    **kwargs
+) -> Optional[Dict[str, Any]]:
+    """
+    Select the next interview question adaptively.
+
+    Compatible with interview_service.py.
+
+    Priority:
+
+        1. Unused weak-skill question
+        2. Target difficulty
+        3. Unused question
+    """
+
+    if seed is not None:
+        random.seed(
+            seed
+        )
+
+    questions = (
+        questions
+        if isinstance(
+            questions,
+            list
+        )
+        else []
+    )
+
+    used_question_ids = (
+        used_question_ids
+        if isinstance(
+            used_question_ids,
+            list
+        )
+        else []
+    )
+
+    used_ids = {
+        str(question_id)
+        for question_id in used_question_ids
+        if question_id is not None
+    }
+
+    performance_profile = (
+        performance_profile
+        if isinstance(
+            performance_profile,
+            dict
+        )
+        else {}
+    )
+
+    # --------------------------------------------------------
+    # Get weak skills if not explicitly supplied
+    # --------------------------------------------------------
+
+    if weak_skills is None:
+
+        weak_skills = identify_weak_skills(
+            performance_profile,
+            threshold=60.0
+        )
+
+    weak_skills = (
+        weak_skills
+        if isinstance(
+            weak_skills,
+            list
+        )
+        else []
+    )
+
+    normalized_weak_skills = {
+        _normalize_skill(
+            skill
+        )
+        for skill in weak_skills
+        if _normalize_skill(skill)
+    }
+
+    # --------------------------------------------------------
+    # Remove used questions
+    # --------------------------------------------------------
+
+    available = []
+
+    for question in questions:
+
+        if not isinstance(
+            question,
+            dict
+        ):
+            continue
+
+        question_id = (
+            _extract_question_id(
+                question
+            )
+        )
+
+        if (
+            question_id
+            and question_id in used_ids
+        ):
+            continue
+
+        if not question.get(
+            "question"
+        ):
+            continue
+
+        available.append(
+            question
+        )
+
+    if not available:
+        return None
+
+    # --------------------------------------------------------
+    # Determine target difficulty
+    # --------------------------------------------------------
+
+    current_difficulty = (
+        _normalize_difficulty(
+            current_difficulty
+        )
+    )
+
+    overall_score = _safe_float(
+        performance_profile.get(
+            "overall_score",
+            performance_profile.get(
+                "score",
+                performance_profile.get(
+                    "percentage",
+                    0.0
+                )
+            )
+        )
+    )
+
+    target_difficulty = (
+        current_difficulty
+    )
+
+    if overall_score >= 80:
+
+        if current_difficulty == "easy":
+            target_difficulty = "medium"
+
+        elif current_difficulty == "medium":
+            target_difficulty = "hard"
+
+        else:
+            target_difficulty = "hard"
+
+    elif (
+        overall_score > 0
+        and overall_score < 50
+    ):
+
+        if current_difficulty == "hard":
+            target_difficulty = "medium"
+
+        elif current_difficulty == "medium":
+            target_difficulty = "easy"
+
+        else:
+            target_difficulty = "easy"
+
+    # --------------------------------------------------------
+    # 1. Weak skill + target difficulty
+    # --------------------------------------------------------
+
+    candidates = [
+        question
+
+        for question in available
+
+        if (
+            _normalize_skill(
+                _extract_skill(
+                    question
+                )
+            )
+            in normalized_weak_skills
+        )
+        and
+        _normalize_difficulty(
+            question.get(
+                "difficulty",
+                "medium"
+            )
+        )
+        == target_difficulty
+    ]
+
+    if candidates:
+        return random.choice(
+            candidates
+        )
+
+    # --------------------------------------------------------
+    # 2. Weak skill any difficulty
+    # --------------------------------------------------------
+
+    candidates = [
+        question
+
+        for question in available
+
+        if (
+            _normalize_skill(
+                _extract_skill(
+                    question
+                )
+            )
+            in normalized_weak_skills
+        )
+    ]

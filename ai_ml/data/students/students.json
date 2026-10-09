@@ -1,0 +1,84 @@
+[
+  {
+    "student_id": "STU001",
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "college_id": "COL001",
+    "degree": "B.Tech",
+    "branch": "Computer Science",
+    "cgpa": 8.4,
+    "graduation_year": 2027,
+    "experience_years": 0,
+    "skills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Data Structures",
+      "Algorithms",
+      "OOP"
+    ],
+    "programming_languages": [
+      "Python",
+      "Java",
+      "SQL"
+    ],
+    "certifications": [
+      "Python Programming",
+      "Machine Learning Fundamentals"
+    ]
+  },
+  {
+    "student_id": "STU002",
+    "name": "Priya Patel",
+    "email": "priya@example.com",
+    "college_id": "COL001",
+    "degree": "B.Tech",
+    "branch": "Information Technology",
+    "cgpa": 9.1,
+    "graduation_year": 2027,
+    "experience_years": 1,
+    "skills": [
+      "Java",
+      "SQL",
+      "Spring Boot",
+      "Data Structures",
+      "Algorithms",
+      "OOP"
+    ],
+    "programming_languages": [
+      "Java",
+      "SQL",
+      "JavaScript"
+    ],
+    "certifications": [
+      "Java Development",
+      "Database Management"
+    ]
+  },
+  {
+    "student_id": "STU003",
+    "name": "Amit Kumar",
+    "email": "amit@example.com",
+    "college_id": "COL002",
+    "degree": "B.Tech",
+    "branch": "Computer Science",
+    "cgpa": 7.2,
+    "graduation_year": 2026,
+    "experience_years": 2,
+    "skills": [
+      "Python",
+      "Django",
+      "REST API",
+      "SQL",
+      "Git"
+    ],
+    "programming_languages": [
+      "Python",
+      "SQL",
+      "JavaScript"
+    ],
+    "certifications": [
+      "Django Development"
+    ]
+  }
+]

@@ -1,0 +1,1302 @@
+/* =========================================================
+   CAMPUSLINK ACCESS CONTROL
+========================================================= */
+
+.access-page {
+  min-height: 100%;
+  width: 100%;
+  padding: 28px;
+  box-sizing: border-box;
+
+  background: #071526;
+  color: #f5f9ff;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.access-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.access-title-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.access-title-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #62a8ff;
+
+  background: rgba(34, 111, 211, 0.14);
+
+  border: 1px solid rgba(75, 145, 230, 0.28);
+
+  border-radius: 15px;
+}
+
+.access-eyebrow {
+  display: block;
+
+  color: #4c9aff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.access-header h1 {
+  margin: 4px 0;
+
+  color: #f7fbff;
+
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.access-header p {
+  margin: 0;
+
+  color: #7ea1c8;
+
+  font-size: 14px;
+}
+
+.access-refresh-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  color: #68aaff;
+
+  background: #0b1b31;
+
+  border: 1px solid #1d4169;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.access-summary-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.access-summary-card {
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 17px;
+
+  box-sizing: border-box;
+
+  background: #0a1a2d;
+
+  border: 1px solid #1a3453;
+
+  border-radius: 15px;
+}
+
+
+/* IMPORTANT:
+   Unique classes are used.
+   NO generic .student/.recruiter/.admin.
+*/
+
+.access-summary-icon {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  position: static !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  float: none !important;
+
+  border-radius: 12px;
+}
+
+.access-summary-icon-total {
+  color: #62a8ff;
+
+  background: rgba(55, 125, 221, 0.13);
+}
+
+.access-summary-icon-student {
+  color: #66a8ff;
+
+  background: rgba(41, 117, 220, 0.13);
+}
+
+.access-summary-icon-recruiter {
+  color: #52c7ff;
+
+  background: rgba(45, 170, 218, 0.13);
+}
+
+.access-summary-icon-admin {
+  color: #a7a5ff;
+
+  background: rgba(117, 101, 230, 0.13);
+}
+
+.access-summary-icon svg {
+  position: static !important;
+
+  width: 21px !important;
+  height: 21px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  float: none !important;
+}
+
+.access-summary-card span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #7899bf;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.access-summary-card strong {
+  color: #f5f9ff;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   CONTROL PANEL
+========================================================= */
+
+.access-control-panel {
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  background: #091a2e;
+
+  border: 1px solid #1a3657;
+
+  border-radius: 16px;
+
+  margin-bottom: 16px;
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.access-search-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  height: 46px;
+
+  padding: 0 13px;
+
+  color: #6faeff;
+
+  background: #071526;
+
+  border: 1px solid #1d3b5d;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+.access-search-box input {
+  width: 100%;
+  min-width: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #f5f9ff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+}
+
+.access-search-box input::placeholder {
+  color: #607f9f;
+}
+
+.access-search-clear {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #7595b8;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.access-filter-section {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #142e4b;
+}
+
+.access-filter-section
+  + .access-filter-section {
+  margin-top: 13px;
+}
+
+.access-filter-label {
+  min-width: 115px;
+
+  color: #6f94bd;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.access-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.access-filter-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 36px;
+
+  padding: 8px 14px;
+
+  color: #86a8ca;
+
+  background: #0b2037;
+
+  border: 1px solid #1c3e61;
+
+  border-radius: 9px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.access-filter-button:hover {
+  color: #dcecff;
+
+  background: #102a46;
+
+  border-color: #326da7;
+}
+
+.access-filter-button.active {
+  color: #ffffff;
+
+  background: #1768d3;
+
+  border-color: #3186f1;
+}
+
+.access-filter-button.active.status-active {
+  color: #72f0a6;
+
+  background: rgba(31, 144, 86, 0.14);
+
+  border-color: rgba(56, 185, 116, 0.42);
+}
+
+.access-filter-button.active.status-blocked {
+  color: #ff9b91;
+
+  background: rgba(207, 72, 67, 0.13);
+
+  border-color: rgba(226, 90, 83, 0.38);
+}
+
+.access-filter-button.active.status-pending {
+  color: #ffc568;
+
+  background: rgba(222, 151, 35, 0.13);
+
+  border-color: rgba(226, 160, 53, 0.4);
+}
+
+
+/* =========================================================
+   RESULT BAR
+========================================================= */
+
+.access-result-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 13px;
+
+  color: #7798bc;
+
+  font-size: 13px;
+}
+
+.access-result-bar strong {
+  color: #e7f1ff;
+}
+
+.access-current-filter {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.access-current-filter span {
+  color: #6e91b6;
+}
+
+.filter-divider {
+  margin: 0 5px;
+  color: #2e4e70 !important;
+}
+
+
+/* =========================================================
+   USER CARD
+========================================================= */
+
+.access-users-card {
+  overflow: hidden;
+
+  background: #091a2d;
+
+  border: 1px solid #1a3657;
+
+  border-radius: 16px;
+}
+
+.access-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 21px;
+
+  border-bottom: 1px solid #17314f;
+}
+
+.access-table-header h2 {
+  margin: 4px 0 0;
+
+  color: #f4f9ff;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.access-user-count {
+  padding: 7px 11px;
+
+  color: #76adf3;
+
+  background: #0b223d;
+
+  border: 1px solid #1b426a;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.access-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.access-table {
+  width: 100%;
+  min-width: 900px;
+
+  border-collapse: collapse;
+}
+
+.access-table thead {
+  background: #08182a;
+}
+
+.access-table th {
+  padding: 13px 16px;
+
+  color: #6387ad;
+
+  border-bottom: 1px solid #183451;
+
+  text-align: left;
+
+  white-space: nowrap;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.access-table td {
+  padding: 15px 16px;
+
+  color: #d9e8f9;
+
+  border-bottom: 1px solid #132d48;
+
+  vertical-align: middle;
+
+  font-size: 13px;
+}
+
+.access-table tbody tr {
+  height: 72px;
+}
+
+.access-table tbody tr:hover {
+  background: rgba(30, 83, 135, 0.08);
+}
+
+.access-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.access-user-cell {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  min-width: 190px;
+}
+
+.access-avatar {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: #69aaff;
+
+  background: #102b4c;
+
+  border: 1px solid #1c4774;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.access-user-cell strong {
+  display: block;
+
+  color: #f0f6ff;
+
+  font-size: 13px;
+}
+
+.access-user-cell small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #5e81a5;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.access-email-cell {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #8eb0d3;
+
+  white-space: nowrap;
+}
+
+.access-email-cell svg {
+  position: static !important;
+
+  width: 15px !important;
+  height: 15px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  float: none !important;
+
+  color: #4c91e7;
+}
+
+
+/* =========================================================
+   ROLE BADGE
+   IMPORTANT:
+   NO GENERIC .student/.recruiter/.admin
+========================================================= */
+
+.access-role-badge {
+  position: static !important;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 6px;
+
+  width: max-content !important;
+  height: auto !important;
+
+  min-height: 30px;
+
+  margin: 0 !important;
+  padding: 6px 9px !important;
+
+  box-sizing: border-box;
+
+  border-radius: 7px;
+
+  float: none !important;
+
+  transform: none !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  line-height: 1.2;
+
+  white-space: nowrap;
+}
+
+.access-role-badge svg {
+  position: static !important;
+
+  display: inline-block !important;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+
+  float: none !important;
+}
+
+.access-role-student {
+  color: #6bb0ff !important;
+
+  background: rgba(53, 126, 218, 0.12) !important;
+
+  border: 1px solid
+    rgba(58, 130, 219, 0.27) !important;
+}
+
+.access-role-recruiter {
+  color: #63d1ff !important;
+
+  background: rgba(43, 163, 210, 0.11) !important;
+
+  border: 1px solid
+    rgba(54, 171, 218, 0.27) !important;
+}
+
+.access-role-admin {
+  color: #aaa7ff !important;
+
+  background: rgba(112, 95, 219, 0.12) !important;
+
+  border: 1px solid
+    rgba(126, 108, 228, 0.28) !important;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.access-status-badge {
+  width: max-content;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 6px 9px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  white-space: nowrap;
+}
+
+.access-status-badge svg {
+  position: static !important;
+
+  width: 15px !important;
+  height: 15px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  float: none !important;
+}
+
+.access-status-active {
+  color: #62e89b;
+
+  background: rgba(41, 165, 99, 0.11);
+
+  border: 1px solid
+    rgba(54, 183, 111, 0.28);
+}
+
+.access-status-blocked {
+  color: #ff8e87;
+
+  background: rgba(207, 69, 63, 0.11);
+
+  border: 1px solid
+    rgba(222, 79, 73, 0.27);
+}
+
+.access-status-pending {
+  color: #ffc365;
+
+  background: rgba(218, 148, 32, 0.11);
+
+  border: 1px solid
+    rgba(222, 157, 43, 0.27);
+}
+
+
+/* =========================================================
+   AFFILIATION
+========================================================= */
+
+.access-affiliation {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #8eafd0;
+
+  white-space: nowrap;
+}
+
+.access-affiliation svg {
+  position: static !important;
+
+  width: 15px !important;
+  height: 15px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  float: none !important;
+
+  color: #4d94e8;
+}
+
+.access-affiliation .muted {
+  color: #5d7c9d;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.access-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  white-space: nowrap;
+}
+
+.access-view-button,
+.access-status-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  min-height: 32px;
+
+  padding: 7px 10px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.access-view-button {
+  color: #68a9ff;
+
+  background: #0c2541;
+
+  border: 1px solid #1e4a76;
+}
+
+.access-status-action.block {
+  color: #ff9992;
+
+  background: rgba(190, 60, 57, 0.08);
+
+  border: 1px solid
+    rgba(213, 78, 73, 0.28);
+}
+
+.access-status-action.activate {
+  color: #66e79c;
+
+  background: rgba(36, 156, 94, 0.08);
+
+  border: 1px solid
+    rgba(52, 180, 109, 0.28);
+}
+
+.access-view-button svg,
+.access-status-action svg {
+  position: static !important;
+
+  width: 15px !important;
+  height: 15px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+  float: none !important;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.access-empty {
+  min-height: 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  padding: 35px;
+
+  text-align: center;
+}
+
+.access-empty-icon {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  color: #579ef3;
+
+  background: #0d2744;
+
+  border: 1px solid #204c77;
+
+  border-radius: 16px;
+}
+
+.access-empty h3 {
+  margin: 0 0 7px;
+
+  color: #f2f7ff;
+
+  font-size: 18px;
+}
+
+.access-empty p {
+  max-width: 440px;
+
+  margin: 0 0 18px;
+
+  color: #7193b8;
+
+  font-size: 13px;
+}
+
+.access-empty button {
+  padding: 9px 14px;
+
+  color: #ffffff;
+
+  background: #1768d3;
+
+  border: 1px solid #3185ee;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.access-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  background: rgba(2, 9, 18, 0.78);
+
+  backdrop-filter: blur(7px);
+}
+
+.access-modal {
+  width: min(650px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #0a1b2f;
+
+  border: 1px solid #224363;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.5);
+}
+
+.access-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 20px 22px;
+
+  border-bottom: 1px solid #183451;
+}
+
+.access-modal-header h2 {
+  margin: 5px 0 0;
+
+  color: #f5f9ff;
+
+  font-size: 20px;
+}
+
+.access-modal-close {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #789abc;
+
+  background: #0d223b;
+
+  border: 1px solid #1d3d5f;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.access-modal-user {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 20px 22px;
+
+  background: #08182a;
+}
+
+.access-modal-avatar {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #70adff;
+
+  background: #102b4a;
+
+  border: 1px solid #24517f;
+
+  border-radius: 13px;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.access-modal-user h3 {
+  margin: 0 0 4px;
+
+  color: #f5f9ff;
+
+  font-size: 17px;
+}
+
+.access-modal-user p {
+  margin: 0;
+
+  color: #7296bc;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   MODAL DETAILS
+========================================================= */
+
+.access-detail-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1px;
+
+  background: #183451;
+}
+
+.access-detail-item {
+  min-height: 85px;
+
+  padding: 16px 18px;
+
+  box-sizing: border-box;
+
+  background: #0a1b2f;
+}
+
+.access-detail-item > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #6084a9;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.access-detail-item > strong {
+  display: block;
+
+  color: #dceaff;
+
+  font-size: 13px;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   MODAL FOOTER
+========================================================= */
+
+.access-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 17px 22px;
+
+  border-top: 1px solid #183451;
+}
+
+.access-modal-secondary,
+.access-modal-primary {
+  padding: 9px 14px;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.access-modal-secondary {
+  color: #8eafd0;
+
+  background: #0d223a;
+
+  border: 1px solid #204361;
+}
+
+.access-modal-primary {
+  color: #ffffff;
+
+  border: 1px solid transparent;
+}
+
+.access-modal-primary.block {
+  background: #a83e3a;
+  border-color: #c0504b;
+}
+
+.access-modal-primary.activate {
+  background: #187e4d;
+  border-color: #279e65;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+  .access-summary-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .access-page {
+    padding: 18px;
+  }
+
+  .access-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .access-refresh-button {
+    width: 100%;
+  }
+
+  .access-filter-section {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .access-filter-label {
+    min-width: auto;
+  }
+
+  .access-result-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .access-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-header h1 {
+    font-size: 24px;
+  }
+
+  .access-title-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .access-control-panel {
+    padding: 15px;
+  }
+
+  .access-filter-buttons {
+    width: 100%;
+  }
+
+  .access-filter-button {
+    flex: 1;
+    min-width: 110px;
+  }
+
+  .access-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-modal-footer {
+    flex-direction: column;
+  }
+
+  .access-modal-secondary,
+  .access-modal-primary {
+    width: 100%;
+  }
+}

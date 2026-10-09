@@ -1,0 +1,13 @@
+{
+  "student_id": "STU001",
+  "job_id": "JOB001",
+  "eligible": true,
+  "eligibility_percentage": 100,
+  "skill_match": 100,
+  "language_match": 100,
+  "education_match": 100,
+  "experience_match": 100,
+  "overall_match": 100,
+  "status": "ELIGIBLE",
+  "recommendation": "HIGHLY_RECOMMENDED"
+}

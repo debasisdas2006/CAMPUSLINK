@@ -1,0 +1,24 @@
+{
+  "interview_id": "INT-DEMO-001",
+  "student_id": "STU001",
+  "job_id": "JOB001",
+  "status": "IN_PROGRESS",
+  "question_count": 5,
+  "questions": [
+    {
+      "question_id": "INT-SQL-002",
+      "skill": "SQL",
+      "difficulty": "medium",
+      "question": "What is the difference between INNER JOIN and LEFT JOIN?"
+    },
+    {
+      "question_id": "INT-OOP-002",
+      "skill": "OOP",
+      "difficulty": "medium",
+      "question": "Explain inheritance and polymorphism."
+    }
+  ],
+  "student_view": {
+    "correct_answer_hidden": true
+  }
+}

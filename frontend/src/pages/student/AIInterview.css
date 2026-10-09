@@ -1,0 +1,768 @@
+/* =========================================================
+   CAMPUSLINK - AI INTERVIEW
+   Matches CampusLink dark navy / blue / green design
+   ========================================================= */
+
+.ai-interview-page {
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #e5eefb;
+  background: #071526;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.ai-interview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.ai-interview-header > div:first-child {
+  min-width: 0;
+}
+
+.ai-interview-header h1 {
+  margin: 0 0 7px;
+  color: #f8fafc;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+.ai-interview-header p {
+  margin: 0;
+  color: #8ea5c4;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.interview-header-timer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 110px;
+  padding: 10px 15px;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #60a5fa;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   SETUP
+   ========================================================= */
+
+.interview-setup-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 34px;
+  box-sizing: border-box;
+  border: 1px solid rgba(56, 89, 128, 0.55);
+  border-radius: 18px;
+  background: #0b1a2d;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+.setup-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #60a5fa;
+}
+
+.interview-setup-card h2 {
+  margin: 0 0 10px;
+  color: #f8fafc;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.interview-setup-card > p {
+  max-width: 720px;
+  margin: 0 0 24px;
+  color: #8ea5c4;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* =========================================================
+   SCHEDULED INTERVIEW INFORMATION
+   ========================================================= */
+
+.scheduled-interview-info {
+  background: #0d2035 !important;
+  border: 1px solid rgba(59, 130, 246, 0.28) !important;
+  color: #dbeafe;
+}
+
+.scheduled-interview-info strong {
+  color: #60a5fa;
+}
+
+.scheduled-interview-info div {
+  color: #a9bad0;
+  line-height: 1.8;
+}
+
+.scheduled-interview-info div strong {
+  color: #cbd5e1;
+}
+
+/* =========================================================
+   MEDIA STATUS
+   ========================================================= */
+
+.media-permission-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.media-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 15px;
+  border: 1px solid rgba(51, 65, 85, 0.85);
+  border-radius: 10px;
+  background: #09182a;
+}
+
+.media-status-row > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #b6c6da;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.media-status-row strong {
+  color: #34d399;
+  font-size: 12px;
+}
+
+/* =========================================================
+   ERROR
+   ========================================================= */
+
+.interview-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 13px 15px;
+  border: 1px solid rgba(239, 68, 68, 0.24);
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.07);
+  color: #fca5a5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.interview-error svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 11px 18px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.primary-btn {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  border: 1px solid #334d6d;
+  background: transparent;
+  color: #9fb3cd;
+}
+
+.secondary-btn:hover {
+  border-color: #4b6b92;
+  background: rgba(59, 130, 246, 0.06);
+  color: #e2e8f0;
+}
+
+.setup-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.setup-actions .primary-btn {
+  width: 100%;
+}
+
+/* =========================================================
+   SETUP NOTE
+   ========================================================= */
+
+.setup-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 20px;
+  padding: 13px 14px;
+  border: 1px solid rgba(52, 211, 153, 0.16);
+  border-radius: 10px;
+  background: rgba(16, 185, 129, 0.055);
+  color: #7dd3b0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.setup-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #34d399;
+}
+
+/* =========================================================
+   LIVE INTERVIEW MAIN AREA
+   ========================================================= */
+
+.interview-main-grid {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.78fr) minmax(430px, 1.22fr);
+  gap: 20px;
+  align-items: start;
+}
+
+/* =========================================================
+   VIDEO SECTION
+   ========================================================= */
+
+.interview-video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.student-video-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  padding: 14px;
+  border: 1px solid rgba(56, 89, 128, 0.55);
+  border-radius: 17px;
+  background: #0b1a2d;
+}
+
+.student-camera-video {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+  border-radius: 11px;
+  background: #020a15;
+  transform: scaleX(-1);
+}
+
+.camera-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 11px;
+  background: #020a15;
+  color: #526b88;
+}
+
+.camera-placeholder span {
+  font-size: 12px;
+}
+
+.video-overlay {
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.participant-name {
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: rgba(2, 10, 21, 0.78);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  backdrop-filter: blur(5px);
+}
+
+.media-indicators {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 9px;
+  border-radius: 7px;
+  background: rgba(2, 10, 21, 0.78);
+  color: #6ee7b7;
+  backdrop-filter: blur(5px);
+}
+
+/* =========================================================
+   MONITORING
+   ========================================================= */
+
+.monitoring-panel {
+  overflow: hidden;
+  border: 1px solid rgba(56, 89, 128, 0.55);
+  border-radius: 16px;
+  background: #0b1a2d;
+}
+
+/* Make MonitoringStatus fit project theme */
+.monitoring-panel > div {
+  background: transparent !important;
+  color: #e5eefb;
+}
+
+.monitoring-panel h1,
+.monitoring-panel h2,
+.monitoring-panel h3,
+.monitoring-panel h4,
+.monitoring-panel strong {
+  color: #f8fafc;
+}
+
+.monitoring-panel p,
+.monitoring-panel span {
+  color: #94a3b8;
+}
+
+/* =========================================================
+   QUESTION SECTION
+   ========================================================= */
+
+.interview-question-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.question-progress {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 7px 11px;
+  border-radius: 7px;
+  background: rgba(37, 99, 235, 0.09);
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.question-card {
+  padding: 25px;
+  border: 1px solid rgba(56, 89, 128, 0.55);
+  border-radius: 17px;
+  background: #0b1a2d;
+}
+
+.question-meta {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+}
+
+.question-meta span {
+  padding: 6px 9px;
+  border-radius: 7px;
+  background: rgba(37, 99, 235, 0.11);
+  color: #93c5fd;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.question-meta span:last-child {
+  background: rgba(148, 163, 184, 0.08);
+  color: #94a3b8;
+}
+
+.question-card h2 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 750;
+}
+
+/* =========================================================
+   ANSWER
+   ========================================================= */
+
+.answer-section {
+  padding: 20px;
+  border: 1px solid rgba(56, 89, 128, 0.55);
+  border-radius: 16px;
+  background: #0b1a2d;
+}
+
+.answer-section label {
+  display: block;
+  margin-bottom: 9px;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.answer-section textarea {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 14px;
+  border: 1px solid #334d6d;
+  border-radius: 10px;
+  outline: none;
+  background: #081729;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.answer-section textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.08);
+}
+
+.answer-section textarea::placeholder {
+  color: #52657e;
+}
+
+/* =========================================================
+   QUESTION ACTIONS
+   ========================================================= */
+
+.question-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* =========================================================
+   FOOTER NOTE
+   ========================================================= */
+
+.interview-footer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 18px;
+  padding: 13px 15px;
+  border: 1px solid rgba(59, 130, 246, 0.14);
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.045);
+  color: #8da6c5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.interview-footer-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #60a5fa;
+}
+
+/* =========================================================
+   COMPLETION
+   ========================================================= */
+
+.interview-complete-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 55px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid rgba(56, 89, 128, 0.55);
+  border-radius: 20px;
+  background: #0b1a2d;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.18);
+}
+
+.complete-icon {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.09);
+  color: #34d399;
+}
+
+.interview-complete-card h1 {
+  margin: 0 0 9px;
+  color: #f8fafc;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.interview-complete-card > p {
+  margin: 0 auto 25px;
+  color: #8ea5c4;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* =========================================================
+   COMPLETION STATS
+   ========================================================= */
+
+.completion-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.completion-stats > div {
+  padding: 16px 10px;
+  border: 1px solid rgba(51, 65, 85, 0.75);
+  border-radius: 11px;
+  background: #09182a;
+}
+
+.completion-stats strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #34d399;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.completion-stats span {
+  color: #71849d;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   COMPLETION MESSAGES
+   ========================================================= */
+
+.completion-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding: 13px 15px;
+  text-align: left;
+  border: 1px solid rgba(59, 130, 246, 0.14);
+  border-radius: 10px;
+  background: rgba(37, 99, 235, 0.055);
+  color: #93c5fd;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.completion-message svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #60a5fa;
+}
+
+.completion-message span {
+  color: #9db0c7;
+}
+
+/* =========================================================
+   SESSION ID
+   ========================================================= */
+
+.session-id {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #081729;
+}
+
+.session-id span {
+  color: #60738d;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.session-id strong {
+  color: #60a5fa;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+/* =========================================================
+   HOVER / FOCUS
+   ========================================================= */
+
+button:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid rgba(96, 165, 250, 0.7);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .interview-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-video-card {
+    max-width: 760px;
+  }
+
+  .interview-video-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .ai-interview-page {
+    padding: 22px;
+  }
+
+  .media-permission-area {
+    grid-template-columns: 1fr;
+  }
+
+  .completion-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .ai-interview-page {
+    padding: 16px;
+  }
+
+  .ai-interview-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .interview-header-timer {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .interview-setup-card,
+  .interview-complete-card,
+  .question-card,
+  .answer-section {
+    padding: 20px;
+  }
+
+  .question-card h2 {
+    font-size: 17px;
+  }
+
+  .question-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .question-actions button {
+    width: 100%;
+  }
+
+  .completion-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .setup-actions {
+    flex-direction: column;
+  }
+
+  .setup-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .ai-interview-header h1 {
+    font-size: 25px;
+  }
+
+  .interview-setup-card {
+    margin-top: 18px;
+  }
+
+  .student-video-card {
+    padding: 10px;
+  }
+
+  .video-overlay {
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+  }
+}

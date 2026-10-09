@@ -1,0 +1,212 @@
+[
+  {
+    "question_id": "Q001",
+    "skill": "python",
+    "difficulty": "easy",
+    "question": "Which keyword is used to define a function in Python?",
+    "options": {
+      "A": "function",
+      "B": "def",
+      "C": "fun",
+      "D": "define"
+    },
+    "correct_answer": "B",
+    "explanation": "The def keyword is used to define a function in Python."
+  },
+  {
+    "question_id": "Q002",
+    "skill": "python",
+    "difficulty": "medium",
+    "question": "Which Python data structure stores key-value pairs?",
+    "options": {
+      "A": "List",
+      "B": "Tuple",
+      "C": "Dictionary",
+      "D": "Set"
+    },
+    "correct_answer": "C",
+    "explanation": "A Python dictionary stores data as key-value pairs."
+  },
+  {
+    "question_id": "Q003",
+    "skill": "python",
+    "difficulty": "hard",
+    "question": "What is the average time complexity of dictionary key lookup in Python?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n log n)"
+    },
+    "correct_answer": "A",
+    "explanation": "Python dictionaries generally provide average O(1) key lookup."
+  },
+  {
+    "question_id": "Q004",
+    "skill": "sql",
+    "difficulty": "easy",
+    "question": "Which SQL command is used to retrieve data from a table?",
+    "options": {
+      "A": "GET",
+      "B": "FETCH",
+      "C": "SELECT",
+      "D": "READ"
+    },
+    "correct_answer": "C",
+    "explanation": "SELECT is used to retrieve data from database tables."
+  },
+  {
+    "question_id": "Q005",
+    "skill": "sql",
+    "difficulty": "medium",
+    "question": "Which SQL clause is used to filter rows?",
+    "options": {
+      "A": "ORDER BY",
+      "B": "WHERE",
+      "C": "GROUP BY",
+      "D": "HAVING"
+    },
+    "correct_answer": "B",
+    "explanation": "WHERE filters individual rows before grouping."
+  },
+  {
+    "question_id": "Q006",
+    "skill": "sql",
+    "difficulty": "hard",
+    "question": "Which SQL operation combines rows from two or more tables using a related column?",
+    "options": {
+      "A": "JOIN",
+      "B": "MERGE",
+      "C": "CONNECT",
+      "D": "LINK"
+    },
+    "correct_answer": "A",
+    "explanation": "JOIN operations combine related rows from multiple tables."
+  },
+  {
+    "question_id": "Q007",
+    "skill": "oop",
+    "difficulty": "easy",
+    "question": "Which OOP concept allows a class to inherit properties from another class?",
+    "options": {
+      "A": "Encapsulation",
+      "B": "Inheritance",
+      "C": "Abstraction",
+      "D": "Compilation"
+    },
+    "correct_answer": "B",
+    "explanation": "Inheritance allows a class to derive properties and behavior from another class."
+  },
+  {
+    "question_id": "Q008",
+    "skill": "oop",
+    "difficulty": "medium",
+    "question": "Which OOP principle hides internal implementation details?",
+    "options": {
+      "A": "Inheritance",
+      "B": "Polymorphism",
+      "C": "Encapsulation",
+      "D": "Instantiation"
+    },
+    "correct_answer": "C",
+    "explanation": "Encapsulation restricts direct access to internal implementation details."
+  },
+  {
+    "question_id": "Q009",
+    "skill": "data structures",
+    "difficulty": "easy",
+    "question": "Which data structure follows the LIFO principle?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Array",
+      "D": "Graph"
+    },
+    "correct_answer": "B",
+    "explanation": "A stack follows Last In, First Out."
+  },
+  {
+    "question_id": "Q010",
+    "skill": "data structures",
+    "difficulty": "medium",
+    "question": "Which data structure follows the FIFO principle?",
+    "options": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "Tree",
+      "D": "Heap"
+    },
+    "correct_answer": "B",
+    "explanation": "A queue follows First In, First Out."
+  },
+  {
+    "question_id": "Q011",
+    "skill": "algorithms",
+    "difficulty": "easy",
+    "question": "Which algorithm is commonly used to find an element in a sorted array efficiently?",
+    "options": {
+      "A": "Linear Search",
+      "B": "Binary Search",
+      "C": "Bubble Sort",
+      "D": "Depth First Search"
+    },
+    "correct_answer": "B",
+    "explanation": "Binary search repeatedly divides the sorted search space."
+  },
+  {
+    "question_id": "Q012",
+    "skill": "algorithms",
+    "difficulty": "medium",
+    "question": "What is the average time complexity of binary search?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n²)",
+      "C": "O(log n)",
+      "D": "O(1)"
+    },
+    "correct_answer": "C",
+    "explanation": "Binary search reduces the search space by half at each step."
+  },
+  {
+    "question_id": "Q013",
+    "skill": "machine learning",
+    "difficulty": "easy",
+    "question": "Which type of machine learning uses labeled training data?",
+    "options": {
+      "A": "Supervised learning",
+      "B": "Unsupervised learning",
+      "C": "Reinforcement learning",
+      "D": "Random learning"
+    },
+    "correct_answer": "A",
+    "explanation": "Supervised learning uses examples containing input data and known labels."
+  },
+  {
+    "question_id": "Q014",
+    "skill": "machine learning",
+    "difficulty": "medium",
+    "question": "What problem occurs when a model performs very well on training data but poorly on unseen data?",
+    "options": {
+      "A": "Underfitting",
+      "B": "Overfitting",
+      "C": "Normalization",
+      "D": "Regularization"
+    },
+    "correct_answer": "B",
+    "explanation": "Overfitting occurs when a model learns the training data too closely and generalizes poorly."
+  },
+  {
+    "question_id": "Q015",
+    "skill": "rest api",
+    "difficulty": "easy",
+    "question": "Which HTTP method is commonly used to retrieve a resource?",
+    "options": {
+      "A": "GET",
+      "B": "POST",
+      "C": "DELETE",
+      "D": "PATCH"
+    },
+    "correct_answer": "A",
+    "explanation": "GET is commonly used to retrieve resources."
+  }
+]

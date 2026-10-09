@@ -1,0 +1,90 @@
+[
+  {
+    "job_id": "JOB001",
+    "company_id": "COMP001",
+    "job_title": "Python Developer",
+    "job_description": "Develop backend applications using Python and related technologies.",
+    "location": "Bengaluru, India",
+    "employment_type": "FULL_TIME",
+    "experience_required": 0,
+    "minimum_cgpa": 7.0,
+    "degree_required": [
+      "B.Tech",
+      "B.E."
+    ],
+    "required_languages": [
+      "Python",
+      "SQL"
+    ],
+    "required_skills": [
+      "Python",
+      "SQL",
+      "OOP",
+      "Data Structures",
+      "REST API"
+    ],
+    "interview_required": true,
+    "self_assessment_required": true,
+    "eligibility_cutoff": 70,
+    "interview_cutoff": 60
+  },
+  {
+    "job_id": "JOB002",
+    "company_id": "COMP002",
+    "job_title": "Java Backend Developer",
+    "job_description": "Build scalable backend services using Java and Spring Boot.",
+    "location": "Hyderabad, India",
+    "employment_type": "FULL_TIME",
+    "experience_required": 1,
+    "minimum_cgpa": 7.5,
+    "degree_required": [
+      "B.Tech",
+      "B.E."
+    ],
+    "required_languages": [
+      "Java",
+      "SQL"
+    ],
+    "required_skills": [
+      "Java",
+      "SQL",
+      "Spring Boot",
+      "OOP",
+      "Data Structures"
+    ],
+    "interview_required": true,
+    "self_assessment_required": true,
+    "eligibility_cutoff": 70,
+    "interview_cutoff": 60
+  },
+  {
+    "job_id": "JOB003",
+    "company_id": "COMP003",
+    "job_title": "Machine Learning Engineer",
+    "job_description": "Develop and evaluate machine learning models and data pipelines.",
+    "location": "Pune, India",
+    "employment_type": "FULL_TIME",
+    "experience_required": 0,
+    "minimum_cgpa": 7.5,
+    "degree_required": [
+      "B.Tech",
+      "B.E.",
+      "M.Tech"
+    ],
+    "required_languages": [
+      "Python",
+      "SQL"
+    ],
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Data Structures",
+      "Algorithms"
+    ],
+    "interview_required": true,
+    "self_assessment_required": true,
+    "eligibility_cutoff": 70,
+    "interview_cutoff": 65
+  }
+]

@@ -1,0 +1,8 @@
+company_id,company_name,industry,open_jobs,students_hired
+C001,TCS,IT Services,5,35
+C002,Infosys,IT Services,4,28
+C003,Microsoft,Technology,3,18
+C004,Wipro,IT Services,4,25
+C005,Accenture,Consulting,5,30
+C006,Amazon,E-Commerce,3,20
+C007,Deloitte,Consulting,2,15

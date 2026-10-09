@@ -1,0 +1,10 @@
+student_id,job_id,cgpa,experience_years,degree_match,language_match,technical_skill_match,required_skill_count,matched_skill_count,experience_match,cgpa_match,match_label
+STU001,JOB001,8.4,0.0,1,1.0,0.8,5,4,1,1,1
+STU001,JOB002,8.4,0.0,1,1.0,0.6,5,3,1,1,0
+STU001,JOB003,8.4,0.0,1,1.0,1.0,5,5,1,1,1
+STU002,JOB001,9.1,1.0,1,0.5,0.6,5,3,1,1,1
+STU002,JOB002,9.1,1.0,1,1.0,1.0,5,5,1,1,0
+STU002,JOB003,9.1,1.0,1,0.5,0.6,5,3,1,1,1
+STU003,JOB001,7.2,2.0,1,1.0,0.6,5,3,1,1,0
+STU003,JOB002,7.2,2.0,1,0.5,0.2,5,1,1,0,1
+STU003,JOB003,7.2,2.0,1,1.0,0.4,5,2,1,0,0

@@ -1,0 +1,270 @@
+                question_text
+            )
+
+        return True
+
+    # --------------------------------------------------------
+    # 1. Select weak-skill questions first
+    # --------------------------------------------------------
+
+    weak_candidates = []
+
+    for question in valid_questions:
+
+        skill = _normalize_skill(
+            _extract_skill(
+                question
+            )
+        )
+
+        if skill in normalized_weak_skills:
+
+            weak_candidates.append(
+                question
+            )
+
+    random.shuffle(
+        weak_candidates
+    )
+
+    # Give weak skills priority while respecting
+    # the requested difficulty distribution.
+    for difficulty in (
+        "easy",
+        "medium",
+        "hard"
+    ):
+
+        needed = target_counts[
+            difficulty
+        ]
+
+        if needed <= 0:
+            continue
+
+        candidates = [
+            question
+
+            for question in weak_candidates
+
+            if _normalize_difficulty(
+                question.get(
+                    "difficulty",
+                    "medium"
+                )
+            ) == difficulty
+        ]
+
+        random.shuffle(
+            candidates
+        )
+
+        for question in candidates:
+
+            if needed <= 0:
+                break
+
+            if add_question(
+                question
+            ):
+                needed -= 1
+
+    # --------------------------------------------------------
+    # 2. Select job-skill questions
+    # --------------------------------------------------------
+
+    for difficulty in (
+        "easy",
+        "medium",
+        "hard"
+    ):
+
+        target = target_counts[
+            difficulty
+        ]
+
+        current = sum(
+            1
+            for question in selected
+
+            if _normalize_difficulty(
+                question.get(
+                    "difficulty",
+                    "medium"
+                )
+            ) == difficulty
+        )
+
+        needed = max(
+            0,
+            target - current
+        )
+
+        if needed == 0:
+            continue
+
+        candidates = [
+            question
+
+            for question in valid_questions
+
+            if (
+                _normalize_skill(
+                    _extract_skill(
+                        question
+                    )
+                )
+                in normalized_job_skills
+            )
+            and
+            _normalize_difficulty(
+                question.get(
+                    "difficulty",
+                    "medium"
+                )
+            ) == difficulty
+        ]
+
+        random.shuffle(
+            candidates
+        )
+
+        for question in candidates:
+
+            if needed <= 0:
+                break
+
+            if add_question(
+                question
+            ):
+                needed -= 1
+
+    # --------------------------------------------------------
+    # 3. Fill remaining questions by difficulty
+    # --------------------------------------------------------
+
+    for difficulty in (
+        "easy",
+        "medium",
+        "hard"
+    ):
+
+        if len(selected) >= question_count:
+            break
+
+        target = target_counts[
+            difficulty
+        ]
+
+        current = sum(
+            1
+            for question in selected
+
+            if _normalize_difficulty(
+                question.get(
+                    "difficulty",
+                    "medium"
+                )
+            ) == difficulty
+        )
+
+        needed = max(
+            0,
+            target - current
+        )
+
+        if needed <= 0:
+            continue
+
+        candidates = [
+            question
+
+            for question in valid_questions
+
+            if _normalize_difficulty(
+                question.get(
+                    "difficulty",
+                    "medium"
+                )
+            ) == difficulty
+        ]
+
+        random.shuffle(
+            candidates
+        )
+
+        for question in candidates:
+
+            if (
+                len(selected)
+                >= question_count
+            ):
+                break
+
+            if needed <= 0:
+                break
+
+            if add_question(
+                question
+            ):
+                needed -= 1
+
+    # --------------------------------------------------------
+    # 4. Final fallback
+    # --------------------------------------------------------
+
+    if len(selected) < question_count:
+
+        remaining_questions = [
+            question
+
+            for question in valid_questions
+
+            if (
+                _extract_question_id(
+                    question
+                )
+                not in selected_ids
+            )
+        ]
+
+        random.shuffle(
+            remaining_questions
+        )
+
+        for question in remaining_questions:
+
+            if len(selected) >= question_count:
+                break
+
+            add_question(
+                question
+            )
+
+    # --------------------------------------------------------
+    # Final shuffle
+    # --------------------------------------------------------
+
+    random.shuffle(
+        selected
+    )
+
+    return selected[
+        :question_count
+    ]
+
+
+# ============================================================
+# ADAPTIVE NEXT QUESTION
+# ============================================================
+
+def select_next_adaptive_question(
+    questions: Optional[
+        List[Dict[str, Any]]
+    ] = None,
+    current_difficulty: str = "medium",
+    performance_profile: Optional[
+        Dict[str, Any]
+    ] = None,
+    used_question_ids: Optional[
+        List[str]

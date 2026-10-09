@@ -1,0 +1,14 @@
+[
+  {
+    "college_id": "COL001",
+    "name": "ABC Institute of Technology",
+    "location": "Bhubaneswar, India",
+    "status": "ACTIVE"
+  },
+  {
+    "college_id": "COL002",
+    "name": "XYZ College of Engineering",
+    "location": "Cuttack, India",
+    "status": "ACTIVE"
+  }
+]

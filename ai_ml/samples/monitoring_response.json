@@ -1,0 +1,24 @@
+{
+  "monitoring_id": "MON-DEMO-001",
+  "interview_id": "INT001",
+  "student_id": "STU001",
+  "monitoring": {
+    "is_monitoring": true,
+    "frames_processed": 25,
+    "monitoring_score": 91,
+    "face_presence": 96,
+    "attention_score": 88,
+    "movement_score": 90,
+    "warnings": 2
+  },
+  "events": [
+    {
+      "event_type": "FACE_DETECTED",
+      "severity": "INFO"
+    },
+    {
+      "event_type": "LOOKING_AWAY",
+      "severity": "WARNING"
+    }
+  ]
+}

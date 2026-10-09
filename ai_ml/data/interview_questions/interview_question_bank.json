@@ -1,0 +1,164 @@
+[
+  {
+    "question_id": "INT001",
+    "skill": "Python",
+    "difficulty": "easy",
+    "question": "What are the main differences between a Python list and a tuple?"
+  },
+  {
+    "question_id": "INT002",
+    "skill": "Python",
+    "difficulty": "medium",
+    "question": "Explain how exception handling works in Python and describe a situation where you would use it."
+  },
+  {
+    "question_id": "INT003",
+    "skill": "Python",
+    "difficulty": "hard",
+    "question": "Explain Python decorators and describe a practical situation where a decorator would be useful."
+  },
+  {
+    "question_id": "INT004",
+    "skill": "SQL",
+    "difficulty": "easy",
+    "question": "What is the difference between a primary key and a foreign key?"
+  },
+  {
+    "question_id": "INT005",
+    "skill": "SQL",
+    "difficulty": "medium",
+    "question": "Explain the difference between INNER JOIN and LEFT JOIN with an example."
+  },
+  {
+    "question_id": "INT006",
+    "skill": "SQL",
+    "difficulty": "hard",
+    "question": "How would you identify duplicate records in a large SQL table?"
+  },
+  {
+    "question_id": "INT007",
+    "skill": "OOP",
+    "difficulty": "easy",
+    "question": "What are the main principles of object-oriented programming?"
+  },
+  {
+    "question_id": "INT008",
+    "skill": "OOP",
+    "difficulty": "medium",
+    "question": "Explain inheritance and polymorphism with a practical programming example."
+  },
+  {
+    "question_id": "INT009",
+    "skill": "OOP",
+    "difficulty": "hard",
+    "question": "How would you design an object-oriented system while avoiding unnecessary coupling between classes?"
+  },
+  {
+    "question_id": "INT010",
+    "skill": "Data Structures",
+    "difficulty": "easy",
+    "question": "What is the difference between a stack and a queue?"
+  },
+  {
+    "question_id": "INT011",
+    "skill": "Data Structures",
+    "difficulty": "medium",
+    "question": "When would you choose a hash table instead of a list for storing and retrieving data?"
+  },
+  {
+    "question_id": "INT012",
+    "skill": "Data Structures",
+    "difficulty": "hard",
+    "question": "Explain how you would select an appropriate data structure for a system that requires frequent search and insertion operations."
+  },
+  {
+    "question_id": "INT013",
+    "skill": "Algorithms",
+    "difficulty": "easy",
+    "question": "What is the purpose of algorithmic complexity?"
+  },
+  {
+    "question_id": "INT014",
+    "skill": "Algorithms",
+    "difficulty": "medium",
+    "question": "Explain the difference between linear search and binary search."
+  },
+  {
+    "question_id": "INT015",
+    "skill": "Algorithms",
+    "difficulty": "hard",
+    "question": "How would you approach improving the performance of an algorithm that becomes slow as the input size increases?"
+  },
+  {
+    "question_id": "INT016",
+    "skill": "REST API",
+    "difficulty": "easy",
+    "question": "What is a REST API and what is it commonly used for?"
+  },
+  {
+    "question_id": "INT017",
+    "skill": "REST API",
+    "difficulty": "medium",
+    "question": "Explain the difference between GET, POST, PUT and DELETE HTTP methods."
+  },
+  {
+    "question_id": "INT018",
+    "skill": "REST API",
+    "difficulty": "hard",
+    "question": "How would you design a REST API that handles authentication, validation and consistent error responses?"
+  },
+  {
+    "question_id": "INT019",
+    "skill": "Machine Learning",
+    "difficulty": "easy",
+    "question": "What is the difference between supervised and unsupervised learning?"
+  },
+  {
+    "question_id": "INT020",
+    "skill": "Machine Learning",
+    "difficulty": "medium",
+    "question": "What is overfitting and what techniques can be used to reduce it?"
+  },
+  {
+    "question_id": "INT021",
+    "skill": "Machine Learning",
+    "difficulty": "hard",
+    "question": "How would you evaluate a machine learning model when the classes in the dataset are highly imbalanced?"
+  },
+  {
+    "question_id": "INT022",
+    "skill": "Java",
+    "difficulty": "easy",
+    "question": "What is the difference between a Java class and an object?"
+  },
+  {
+    "question_id": "INT023",
+    "skill": "Java",
+    "difficulty": "medium",
+    "question": "Explain the difference between an interface and an abstract class in Java."
+  },
+  {
+    "question_id": "INT024",
+    "skill": "Java",
+    "difficulty": "hard",
+    "question": "How would you design a Java backend component so that it remains maintainable as the application grows?"
+  },
+  {
+    "question_id": "INT025",
+    "skill": "Spring Boot",
+    "difficulty": "easy",
+    "question": "What is Spring Boot and why is it commonly used for backend development?"
+  },
+  {
+    "question_id": "INT026",
+    "skill": "Spring Boot",
+    "difficulty": "medium",
+    "question": "Explain dependency injection in Spring Boot."
+  },
+  {
+    "question_id": "INT027",
+    "skill": "Spring Boot",
+    "difficulty": "hard",
+    "question": "How would you structure a Spring Boot application so that business logic remains separate from controllers and data-access code?"
+  }
+]
