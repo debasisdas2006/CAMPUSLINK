@@ -109,79 +109,28 @@ def health():
 
 
 # =========================================================
-# API ROUTERS
+# API ROUTERS (Mount both under /api/v1 and directly)
 # =========================================================
 
-app.include_router(
+api_routers = [
     auth_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     student_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     company_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     recruiter_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     job_router,
-    prefix="/api/v1"
-)
-
-# Job Eligibility
-app.include_router(
     eligibility_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     application_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     interview_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     test_router,
-    prefix="/api/v1"
-)
-app.include_router(
     ai_test_router,
-    prefix="/api/v1"
-)
-app.include_router(
     ai_ml_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     admin_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     analytics_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     monitoring_router,
-    prefix="/api/v1"
-)
-
-app.include_router(
     notification_router,
-    prefix="/api/v1"
-)
+]
+
+for router_item in api_routers:
+    app.include_router(router_item, prefix="/api/v1")
+    app.include_router(router_item)
+

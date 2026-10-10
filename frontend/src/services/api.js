@@ -1,11 +1,18 @@
 import axios from "axios";
 
+let rawBaseURL =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD
+    ? "https://campuslink-4n0x.onrender.com/api/v1"
+    : "http://localhost:8006/api/v1");
+
+rawBaseURL = rawBaseURL.trim().replace(/\/+$/, "");
+if (!rawBaseURL.endsWith("/api/v1")) {
+  rawBaseURL += "/api/v1";
+}
+
 const api = axios.create({
-  baseURL:
-    import.meta.env.VITE_API_URL ||
-    (import.meta.env.PROD
-      ? "https://campuslink-4n0x.onrender.com/api/v1"
-      : "http://localhost:8006/api/v1"),
+  baseURL: rawBaseURL,
   headers: {
     "Content-Type": "application/json",
   },
