@@ -3,10 +3,10 @@
 ## Backend Information
 
 Base URL:
-http://127.0.0.1:8000
+http://127.0.0.1:8006
 
 Swagger Documentation:
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8006/docs
 
 API Version:
 v1
@@ -321,11 +321,11 @@ GET /api/v1/monitoring/statistics
 
 The frontend should use:
 
-http://127.0.0.1:8000
+http://127.0.0.1:8006
 
 Example:
 
-GET http://127.0.0.1:8000/api/v1/auth/me
+GET http://127.0.0.1:8006/api/v1/auth/me
 
 For protected endpoints, send:
 
@@ -339,7 +339,7 @@ Do not share JWT tokens publicly.
 
 Frontend developers should use the Swagger documentation for the exact request body and response schemas:
 
-http://127.0.0.1:8000/docs
+http://127.0.0.1:8006/docs
 
 Backend developer responsibility:
 
