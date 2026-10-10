@@ -3,7 +3,9 @@ import axios from "axios";
 const api = axios.create({
   baseURL:
     import.meta.env.VITE_API_URL ||
-    "http://localhost:8006/api/v1",
+    (import.meta.env.PROD
+      ? "https://campuslink-4n0x.onrender.com/api/v1"
+      : "http://localhost:8006/api/v1"),
   headers: {
     "Content-Type": "application/json",
   },
