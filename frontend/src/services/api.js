@@ -4,7 +4,7 @@ let rawBaseURL =
   import.meta.env.VITE_API_URL ||
   (import.meta.env.PROD
     ? "https://campuslink-4n0x.onrender.com/api/v1"
-    : "http://localhost:8006/api/v1");
+    : "http://127.0.0.1:8006/api/v1");
 
 rawBaseURL = rawBaseURL.trim().replace(/\/+$/, "");
 if (!rawBaseURL.endsWith("/api/v1")) {

@@ -12,6 +12,13 @@ export async function loginUser(email, password) {
     localStorage.setItem("campuslink_token", data.access_token);
   }
 
+  if (data.user) {
+    localStorage.setItem(
+      "campuslink_user",
+      JSON.stringify(data.user)
+    );
+  }
+
   return data;
 }
 

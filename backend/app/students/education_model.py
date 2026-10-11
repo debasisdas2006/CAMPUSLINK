@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from sqlalchemy import DateTime, ForeignKey, Integer, Numeric, String, func
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, synonym
 
 from app.core.database import Base
 
@@ -15,6 +15,8 @@ class StudentEducation(Base):
         primary_key=True,
         index=True,
     )
+
+    education_id = synonym("id")
 
     student_id: Mapped[int] = mapped_column(
         "student_id",

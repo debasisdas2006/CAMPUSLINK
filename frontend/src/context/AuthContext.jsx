@@ -99,11 +99,11 @@ export function AuthProvider({ children }) {
 
 
       /* ================================================
-         GET CURRENT USER FROM BACKEND
+         GET CURRENT USER (FROM LOGIN OR ME ENDPOINT)
          ================================================ */
 
       const backendUser =
-        await getCurrentUser();
+        loginResponse.user || (await getCurrentUser());
 
 
       if (!backendUser) {

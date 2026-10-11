@@ -56,6 +56,9 @@ function Login() {
   const [successMessage, setSuccessMessage] =
     useState("");
 
+  const [loading, setLoading] =
+    useState(false);
+
 
   /* =====================================================
      REGISTER SUCCESS MESSAGE
@@ -212,20 +215,27 @@ function Login() {
      * again after logout.
      */
 
-    const result =
-  await login(
-    cleanEmail,
-    password,
-    role
-  );
+    setLoading(true);
 
-    if (!result.success) {
+    try {
+      const result =
+        await login(
+          cleanEmail,
+          password,
+          role
+        );
 
-      setError(
-        result.message ||
-        "Invalid email, password, or role."
-      );
-
+      if (!result.success) {
+        setError(
+          result.message ||
+          "Invalid email, password, or role."
+        );
+        setLoading(false);
+        return;
+      }
+    } catch (err) {
+      setError("An unexpected error occurred. Please try again.");
+      setLoading(false);
       return;
     }
 
@@ -552,14 +562,19 @@ function Login() {
             <button
               type="submit"
               className="login-submit"
+              disabled={loading}
             >
-
-              <LogIn size={20} />
-
-              <span>
-                Login
-              </span>
-
+              {loading ? (
+                <>
+                  <span className="login-spinner" />
+                  <span>Logging in...</span>
+                </>
+              ) : (
+                <>
+                  <LogIn size={20} />
+                  <span>Login</span>
+                </>
+              )}
             </button>
 
           </form>

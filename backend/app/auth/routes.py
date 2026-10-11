@@ -1,10 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app.auth.schemas import (
     RegisterRequest,
     LoginRequest,
-    TokenResponse
+    TokenResponse,
+    UserProfile,
 )
 from app.auth.user_model import User
 from app.core.database import get_db
@@ -79,9 +81,9 @@ def login(
     data: LoginRequest,
     db: Session = Depends(get_db)
 ):
-    # Find user by email
+    clean_email = str(data.email).strip().lower()
     user = db.query(User).filter(
-        User.email == data.email
+        func.lower(User.email) == clean_email
     ).first()
 
     # User does not exist
@@ -110,7 +112,15 @@ def login(
     )
 
     return TokenResponse(
-        access_token=access_token
+        access_token=access_token,
+        token_type="bearer",
+        user=UserProfile(
+            id=user.id,
+            user_id=user.id,
+            name=user.name,
+            email=user.email,
+            role=user.role,
+        )
     )
 
 

@@ -1,3 +1,11 @@
+import sys
+from pathlib import Path
+
+# Ensure backend root directory is in sys.path
+backend_dir = Path(__file__).resolve().parent.parent
+if str(backend_dir) not in sys.path:
+    sys.path.insert(0, str(backend_dir))
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -58,17 +66,33 @@ from app.notifications.routes import router as notification_router
 # DATABASE TABLE CREATION
 # =========================================================
 
-    # Database schema already exists in SQL Server. Schema creation is managed separately.
+# Database schema already exists. Schema creation is managed separately.
+
+
+from contextlib import asynccontextmanager
+from sqlalchemy import text
 
 
 # =========================================================
-# FASTAPI APPLICATION
+# FASTAPI APPLICATION LIFESPAN
 # =========================================================
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Pre-warm connection pool on startup so the first user request is fast
+    try:
+        with engine.connect() as conn:
+            conn.execute(text("SELECT 1"))
+    except Exception as exc:
+        print(f"Database pre-warm warning: {exc}")
+    yield
+
 
 app = FastAPI(
     title="CAMPUSLINK API",
     description="AI Powered Campus-to-Corporate Placement Management Platform",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan,
 )
 
 
@@ -133,4 +157,9 @@ api_routers = [
 for router_item in api_routers:
     app.include_router(router_item, prefix="/api/v1")
     app.include_router(router_item)
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8006, reload=True)
 
